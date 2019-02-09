@@ -12,4 +12,11 @@ public class Utility {
 		property.load(file);
 		return property.get(key).toString();
 	}
+	
+	public static String fetchLocatorValue(String key) throws IOException {
+		FileInputStream file = new FileInputStream("./Config/Elements.properties");
+		Properties property = new Properties();
+		property.load(file);
+		return property.get(key).toString();
+	}
 }
