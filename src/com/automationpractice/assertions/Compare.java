@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Compare {
 
-	public static boolean validatePAgeURL(WebDriver driver, String expURL) {
+	public static boolean validatePageURL(WebDriver driver, String expURL) {
 		boolean flag = false;
 		
 		if(driver.getCurrentUrl().equalsIgnoreCase(expURL)) {

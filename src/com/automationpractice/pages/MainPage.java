@@ -14,7 +14,7 @@ public class MainPage {
 		this.driver = driver;
 	}
 	
-	public void clickLogIn() throws IOException {
+	public void clickLogInButton() throws IOException {
 		driver.findElement(By.className(Utility.fetchLocatorValue("login_button_className"))).click();
 	}
 	
