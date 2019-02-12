@@ -21,5 +21,13 @@ public class LoginAndCreateAnAccountPage{
 	public void clickCreateAnAccountButton() throws IOException {
 		driver.findElement(By.id(Utility.fetchLocatorValue("createAnAccount_button_id"))).click();
 	}
+	
+	public void enterEmailToLogIn(String email) throws IOException {
+		driver.findElement(By.id(Utility.fetchLocatorValue("logIn_txtField_id"))).sendKeys(email);
+	}
+	
+	public void enterPasswordToLogIn(String password) throws IOException {
+		driver.findElement(By.id(Utility.fetchLocatorValue("logInPassword_txtField_password"))).sendKeys(password);
+	}
 
 }

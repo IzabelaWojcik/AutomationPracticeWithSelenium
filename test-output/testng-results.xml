@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="216511" started-at="2019-02-12T12:57:14Z" finished-at="2019-02-12T13:00:51Z">
+  <suite name="Default suite" duration-ms="210126" started-at="2019-02-12T13:57:36Z" finished-at="2019-02-12T14:01:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="216511" started-at="2019-02-12T12:57:14Z" finished-at="2019-02-12T13:00:51Z">
+    <test name="Default test" duration-ms="210126" started-at="2019-02-12T13:57:36Z" finished-at="2019-02-12T14:01:06Z">
       <class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest">
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="9471" started-at="2019-02-12T12:57:15Z" finished-at="2019-02-12T12:57:24Z">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="8843" started-at="2019-02-12T13:57:36Z" finished-at="2019-02-12T13:57:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="createAnAccount_enterCorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterCorrectEmailTest" duration-ms="5228" started-at="2019-02-12T12:57:24Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T12:57:30Z">
+        <test-method status="PASS" signature="createAnAccount_enterCorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterCorrectEmailTest" duration-ms="5217" started-at="2019-02-12T13:57:45Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T13:57:50Z">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnAccount_enterCorrectEmailTest -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1572" started-at="2019-02-12T12:57:30Z" finished-at="2019-02-12T12:57:31Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1381" started-at="2019-02-12T13:57:50Z" finished-at="2019-02-12T13:57:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="9774" started-at="2019-02-12T12:57:31Z" finished-at="2019-02-12T12:57:41Z">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="8452" started-at="2019-02-12T13:57:52Z" finished-at="2019-02-12T13:58:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="createAnAccount_enterCorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterCorrectEmailTest" duration-ms="5215" started-at="2019-02-12T12:57:41Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T12:57:46Z">
+        <test-method status="PASS" signature="createAnAccount_enterCorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterCorrectEmailTest" duration-ms="4854" started-at="2019-02-12T13:58:00Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T13:58:05Z">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnAccount_enterCorrectEmailTest -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1543" started-at="2019-02-12T12:57:46Z" finished-at="2019-02-12T12:57:48Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1402" started-at="2019-02-12T13:58:05Z" finished-at="2019-02-12T13:58:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="9065" started-at="2019-02-12T12:57:48Z" finished-at="2019-02-12T12:57:57Z">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="8602" started-at="2019-02-12T13:58:06Z" finished-at="2019-02-12T13:58:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="createAnAccount_enterCorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterCorrectEmailTest" duration-ms="5871" started-at="2019-02-12T12:57:57Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T12:58:03Z">
+        <test-method status="PASS" signature="createAnAccount_enterCorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterCorrectEmailTest" duration-ms="5077" started-at="2019-02-12T13:58:15Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T13:58:20Z">
           <params>
             <param index="0">
               <value>
@@ -60,15 +60,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnAccount_enterCorrectEmailTest -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1535" started-at="2019-02-12T12:58:03Z" finished-at="2019-02-12T12:58:04Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1521" started-at="2019-02-12T13:58:20Z" finished-at="2019-02-12T13:58:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="9373" started-at="2019-02-12T12:58:04Z" finished-at="2019-02-12T12:58:14Z">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="8562" started-at="2019-02-12T13:58:22Z" finished-at="2019-02-12T13:58:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10367" started-at="2019-02-12T12:58:14Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T12:58:24Z">
+        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10377" started-at="2019-02-12T13:58:30Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T13:58:41Z">
           <params>
             <param index="0">
               <value>
@@ -79,15 +79,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnAccount_enterIncorrectEmailTest -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1525" started-at="2019-02-12T12:58:24Z" finished-at="2019-02-12T12:58:25Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1390" started-at="2019-02-12T13:58:41Z" finished-at="2019-02-12T13:58:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="8777" started-at="2019-02-12T12:58:25Z" finished-at="2019-02-12T12:58:34Z">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="8283" started-at="2019-02-12T13:58:42Z" finished-at="2019-02-12T13:58:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10339" started-at="2019-02-12T12:58:34Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T12:58:45Z">
+        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10343" started-at="2019-02-12T13:58:50Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T13:59:01Z">
           <params>
             <param index="0">
               <value>
@@ -98,15 +98,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnAccount_enterIncorrectEmailTest -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1547" started-at="2019-02-12T12:58:45Z" finished-at="2019-02-12T12:58:46Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1632" started-at="2019-02-12T13:59:01Z" finished-at="2019-02-12T13:59:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="8123" started-at="2019-02-12T12:58:46Z" finished-at="2019-02-12T12:58:54Z">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="8493" started-at="2019-02-12T13:59:02Z" finished-at="2019-02-12T13:59:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10340" started-at="2019-02-12T12:58:54Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T12:59:05Z">
+        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10332" started-at="2019-02-12T13:59:11Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T13:59:21Z">
           <params>
             <param index="0">
               <value>
@@ -117,15 +117,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnAccount_enterIncorrectEmailTest -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1519" started-at="2019-02-12T12:59:05Z" finished-at="2019-02-12T12:59:06Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1573" started-at="2019-02-12T13:59:21Z" finished-at="2019-02-12T13:59:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="8602" started-at="2019-02-12T12:59:06Z" finished-at="2019-02-12T12:59:15Z">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="9587" started-at="2019-02-12T13:59:23Z" finished-at="2019-02-12T13:59:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10338" started-at="2019-02-12T12:59:15Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T12:59:25Z">
+        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10390" started-at="2019-02-12T13:59:32Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T13:59:43Z">
           <params>
             <param index="0">
               <value>
@@ -136,15 +136,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnAccount_enterIncorrectEmailTest -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1558" started-at="2019-02-12T12:59:25Z" finished-at="2019-02-12T12:59:27Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1542" started-at="2019-02-12T13:59:43Z" finished-at="2019-02-12T13:59:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="9215" started-at="2019-02-12T12:59:27Z" finished-at="2019-02-12T12:59:36Z">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="8480" started-at="2019-02-12T13:59:44Z" finished-at="2019-02-12T13:59:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10360" started-at="2019-02-12T12:59:36Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T12:59:46Z">
+        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10384" started-at="2019-02-12T13:59:53Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T14:00:03Z">
           <params>
             <param index="0">
               <value>
@@ -155,15 +155,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnAccount_enterIncorrectEmailTest -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1628" started-at="2019-02-12T12:59:46Z" finished-at="2019-02-12T12:59:48Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1543" started-at="2019-02-12T14:00:03Z" finished-at="2019-02-12T14:00:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="9153" started-at="2019-02-12T12:59:48Z" finished-at="2019-02-12T12:59:57Z">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="8991" started-at="2019-02-12T14:00:05Z" finished-at="2019-02-12T14:00:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10336" started-at="2019-02-12T12:59:57Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T13:00:07Z">
+        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10353" started-at="2019-02-12T14:00:14Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T14:00:24Z">
           <params>
             <param index="0">
               <value>
@@ -174,15 +174,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnAccount_enterIncorrectEmailTest -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1531" started-at="2019-02-12T13:00:07Z" finished-at="2019-02-12T13:00:09Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1532" started-at="2019-02-12T14:00:24Z" finished-at="2019-02-12T14:00:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="8768" started-at="2019-02-12T13:00:09Z" finished-at="2019-02-12T13:00:18Z">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="9041" started-at="2019-02-12T14:00:25Z" finished-at="2019-02-12T14:00:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10349" started-at="2019-02-12T13:00:18Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T13:00:28Z">
+        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10369" started-at="2019-02-12T14:00:35Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T14:00:45Z">
           <params>
             <param index="0">
               <value>
@@ -193,15 +193,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnAccount_enterIncorrectEmailTest -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1477" started-at="2019-02-12T13:00:28Z" finished-at="2019-02-12T13:00:29Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1572" started-at="2019-02-12T14:00:45Z" finished-at="2019-02-12T14:00:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="9580" started-at="2019-02-12T13:00:29Z" finished-at="2019-02-12T13:00:39Z">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="7620" started-at="2019-02-12T14:00:46Z" finished-at="2019-02-12T14:00:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10362" started-at="2019-02-12T13:00:39Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T13:00:49Z">
+        <test-method status="PASS" signature="createAnAccount_enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterIncorrectEmailTest" duration-ms="10344" started-at="2019-02-12T14:00:54Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T14:01:04Z">
           <params>
             <param index="0">
               <value>
@@ -212,7 +212,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnAccount_enterIncorrectEmailTest -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1550" started-at="2019-02-12T13:00:49Z" finished-at="2019-02-12T13:00:51Z">
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1572" started-at="2019-02-12T14:01:04Z" finished-at="2019-02-12T14:01:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
