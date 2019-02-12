@@ -5,8 +5,8 @@
     <classes>
       <class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest">
         <methods>
+          <include name="createAnAccount_enterIncorrectEmailTest" invocation-numbers="5"/>
           <include name="initialDriverInstance"/>
-          <include name="createAnAccountTest"/>
           <include name="closeDriverInstance"/>
         </methods>
       </class> <!-- com.automationpractice.testcases.LoginAndCreateAnAccountPageTest -->

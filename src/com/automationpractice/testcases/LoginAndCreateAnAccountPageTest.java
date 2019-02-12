@@ -1,5 +1,6 @@
 package com.automationpractice.testcases;
 
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
@@ -23,7 +24,19 @@ public class LoginAndCreateAnAccountPageTest extends Driver{
 		page.enterEmailToCreateAnAccount(email);
 		page.clickCreateAnAccountButton();
 		
-		assertTrue(Compare.validateElementExist(driver, "id", "account-creation_form"));
+		assertTrue(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
+	}
+	
+	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class)
+	public void createAnAccount_enterIncorrectEmailTest(String email) throws IOException {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		LoginAndCreateAnAccountPage page = new LoginAndCreateAnAccountPage(driver);
+		
+		page.enterEmailToCreateAnAccount(email);
+		page.clickCreateAnAccountButton();
+		
+		assertFalse(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
 	}
 	
 }
