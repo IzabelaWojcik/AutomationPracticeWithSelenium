@@ -3,10 +3,16 @@ package com.automationpractice.pages;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
-import com.automationpractice.base.Driver;
+import org.openqa.selenium.WebDriver;
+
 import com.automationpractice.utility.Utility;
 
-public class LoginAndCreateAnAccountPage extends Driver{
+public class LoginAndCreateAnAccountPage{
+	WebDriver driver;
+	
+	public LoginAndCreateAnAccountPage(WebDriver driver) {
+		this.driver = driver;
+	}
 	
 	public void enterEmailToCreateAnAccount(String email) throws IOException {
 		driver.findElement(By.id(Utility.fetchLocatorValue("createAnAccount_txtField_id"))).sendKeys(email);

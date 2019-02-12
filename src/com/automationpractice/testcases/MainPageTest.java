@@ -14,11 +14,11 @@ import com.automationpractice.utility.Utility;
 public class MainPageTest extends Driver{
 
 	@Test
-	public void validatePageURLTest() throws IOException {
+	public void onPressLogInButtonMoveToLoginSiteTest() throws IOException {
 		MainPage mainPage = new MainPage(driver);
 		
 		mainPage.clickLogInButton();
-		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("loginURL")));
+		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("loginAndCreateAnAccountURL")));
 	}
 	
 }

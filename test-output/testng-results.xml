@@ -1,25 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10325" started-at="2019-02-09T16:06:32Z" finished-at="2019-02-09T16:06:42Z">
+  <suite name="Default suite" duration-ms="17927" started-at="2019-02-12T09:31:06Z" finished-at="2019-02-12T09:31:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10325" started-at="2019-02-09T16:06:32Z" finished-at="2019-02-09T16:06:42Z">
-      <class name="com.automationpractice.testcases.MainPageTest">
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.MainPageTest@57baeedf]" name="initialDriverInstance" is-config="true" duration-ms="7231" started-at="2019-02-09T16:06:32Z" finished-at="2019-02-09T16:06:39Z">
+    <test name="Default test" duration-ms="17927" started-at="2019-02-12T09:31:06Z" finished-at="2019-02-12T09:31:24Z">
+      <class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="6199" started-at="2019-02-12T09:31:07Z" finished-at="2019-02-12T09:31:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="validatePageURLTest()[pri:0, instance:com.automationpractice.testcases.MainPageTest@57baeedf]" name="validatePageURLTest" duration-ms="1543" started-at="2019-02-09T16:06:39Z" finished-at="2019-02-09T16:06:41Z">
+        <test-method status="PASS" signature="createAnAccount_enterCorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterCorrectEmailTest" duration-ms="1391" started-at="2019-02-12T09:31:13Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T09:31:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[automationtesting65@gmail.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatePageURLTest -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.MainPageTest@57baeedf]" name="closeDriverInstance" is-config="true" duration-ms="1529" started-at="2019-02-09T16:06:41Z" finished-at="2019-02-09T16:06:42Z">
+        </test-method> <!-- createAnAccount_enterCorrectEmailTest -->
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1564" started-at="2019-02-12T09:31:14Z" finished-at="2019-02-12T09:31:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
-      </class> <!-- com.automationpractice.testcases.MainPageTest -->
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="initialDriverInstance" is-config="true" duration-ms="5662" started-at="2019-02-12T09:31:16Z" finished-at="2019-02-12T09:31:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialDriverInstance -->
+        <test-method status="PASS" signature="createAnAccount_enterCorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="createAnAccount_enterCorrectEmailTest" duration-ms="1312" started-at="2019-02-12T09:31:22Z" data-provider="Excel-DataProvider" finished-at="2019-02-12T09:31:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[automationtesting65@o2.pl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAnAccount_enterCorrectEmailTest -->
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@5442a311]" name="closeDriverInstance" is-config="true" duration-ms="1440" started-at="2019-02-12T09:31:23Z" finished-at="2019-02-12T09:31:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriverInstance -->
+      </class> <!-- com.automationpractice.testcases.LoginAndCreateAnAccountPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

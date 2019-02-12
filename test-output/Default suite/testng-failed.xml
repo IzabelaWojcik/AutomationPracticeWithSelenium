@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationpractice.testcases.MainPageTest">
+      <class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest">
         <methods>
-          <include name="validatePageURLTest"/>
           <include name="initialDriverInstance"/>
+          <include name="createAnAccountTest"/>
           <include name="closeDriverInstance"/>
         </methods>
-      </class> <!-- com.automationpractice.testcases.MainPageTest -->
+      </class> <!-- com.automationpractice.testcases.LoginAndCreateAnAccountPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

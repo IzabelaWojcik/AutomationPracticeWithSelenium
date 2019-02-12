@@ -33,7 +33,7 @@ public class Driver {
 			driver = new ChromeDriver();
 		}
 		
-		driver.get(Utility.fetchPropertyValue("applicationURL"));
+		driver.get(Utility.fetchPropertyValue("loginAndCreateAnAccountURL"));
 	}
 	
 	@AfterMethod
