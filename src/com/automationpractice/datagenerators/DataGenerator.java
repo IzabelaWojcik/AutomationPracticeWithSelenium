@@ -22,7 +22,9 @@ public class DataGenerator {
 		else if(met.getName().equalsIgnoreCase("enterIncorrectEmailTest")){
 			sheetName = "emailIncorrect";
 		}
-
+		else if(met.getName().equalsIgnoreCase("enterExistingEmailTest")){
+			sheetName = "existingAccount";
+		}
 		FileInputStream file = new FileInputStream("./TestData/TestData.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet emailSheet = workbook.getSheet(sheetName);

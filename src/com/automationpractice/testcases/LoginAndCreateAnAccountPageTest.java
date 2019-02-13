@@ -46,6 +46,20 @@ public class LoginAndCreateAnAccountPageTest extends Driver{
 	}
 	
 	@Ignore
+	@Test(dataProvider="Excel-OneColumn-DataProvider", dataProviderClass=DataGenerator.class)
+	public void enterExistingEmailTest(String email) throws IOException {
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		LoginAndCreateAnAccountPage page = new LoginAndCreateAnAccountPage(driver);
+		
+		page.enterEmailToCreateAnAccount(email);
+		page.clickCreateAnAccountButton();
+		
+		assertFalse(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
+	}
+	
+	@Ignore
 	@Test(dataProvider="Excel-TwoColumns-DataProvider", dataProviderClass=DataGenerator.class)
 	public void enterCorrectLoginAndPasswordTest(String login, String password) throws IOException {
 		
@@ -61,6 +75,7 @@ public class LoginAndCreateAnAccountPageTest extends Driver{
 		
 	}
 	
+	@Ignore
 	@Test(dataProvider="Excel-TwoColumns-DataProvider", dataProviderClass=DataGenerator.class)
 	public void enterIncorrectLoginData(String login, String password) throws IOException{
 		
@@ -73,7 +88,6 @@ public class LoginAndCreateAnAccountPageTest extends Driver{
 		page.clickLogInButton();
 		
 		assertFalse(Compare.validatePageURL(driver, Utility.fetchPropertyValue("loggedUserURL")));
-		
 		
 	}
 	

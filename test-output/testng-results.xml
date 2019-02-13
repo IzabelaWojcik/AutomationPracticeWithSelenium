@@ -1,105 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="7" passed="4">
+<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29249" started-at="2019-02-13T11:24:01Z" finished-at="2019-02-13T11:24:30Z">
+  <suite name="Default suite" duration-ms="18690" started-at="2019-02-13T11:28:46Z" finished-at="2019-02-13T11:29:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29249" started-at="2019-02-13T11:24:01Z" finished-at="2019-02-13T11:24:30Z">
+    <test name="Default test" duration-ms="18690" started-at="2019-02-13T11:28:46Z" finished-at="2019-02-13T11:29:05Z">
       <class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest">
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="initialDriverInstance" is-config="true" duration-ms="7342" started-at="2019-02-13T11:24:01Z" finished-at="2019-02-13T11:24:09Z">
+        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="initialDriverInstance" is-config="true" duration-ms="7746" started-at="2019-02-13T11:28:46Z" finished-at="2019-02-13T11:28:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="enterIncorrectLoginData(java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="enterIncorrectLoginData" duration-ms="825" started-at="2019-02-13T11:24:09Z" data-provider="Excel-TwoColumns-DataProvider" finished-at="2019-02-13T11:24:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jann@o2.pl]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[haslo1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterIncorrectLoginData -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="initialDriverInstance" is-config="true" duration-ms="6112" started-at="2019-02-13T11:24:09Z" finished-at="2019-02-13T11:24:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="closeDriverInstance" is-config="true" duration-ms="0" started-at="2019-02-13T11:24:09Z" finished-at="2019-02-13T11:24:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="enterIncorrectLoginData(java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="enterIncorrectLoginData" duration-ms="991" started-at="2019-02-13T11:24:16Z" data-provider="Excel-TwoColumns-DataProvider" finished-at="2019-02-13T11:24:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jan]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[haslo1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterIncorrectLoginData -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="initialDriverInstance" is-config="true" duration-ms="5987" started-at="2019-02-13T11:24:17Z" finished-at="2019-02-13T11:24:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="closeDriverInstance" is-config="true" duration-ms="0" started-at="2019-02-13T11:24:17Z" finished-at="2019-02-13T11:24:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="enterIncorrectLoginData(java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="enterIncorrectLoginData" duration-ms="787" started-at="2019-02-13T11:24:23Z" data-provider="Excel-TwoColumns-DataProvider" finished-at="2019-02-13T11:24:23Z">
+        <test-method status="PASS" signature="enterExistingEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="enterExistingEmailTest" duration-ms="10463" started-at="2019-02-13T11:28:54Z" data-provider="Excel-OneColumn-DataProvider" finished-at="2019-02-13T11:29:05Z">
           <params>
             <param index="0">
               <value>
                 <![CDATA[jan@o2.pl]]>
               </value>
             </param>
-            <param index="1">
-              <value>
-                <![CDATA[haslo1]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterIncorrectLoginData -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="closeDriverInstance" is-config="true" duration-ms="1" started-at="2019-02-13T11:24:23Z" finished-at="2019-02-13T11:24:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="initialDriverInstance" is-config="true" duration-ms="5671" started-at="2019-02-13T11:24:23Z" finished-at="2019-02-13T11:24:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialDriverInstance -->
-        <test-method status="PASS" signature="enterIncorrectLoginData(java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="enterIncorrectLoginData" duration-ms="1094" started-at="2019-02-13T11:24:29Z" data-provider="Excel-TwoColumns-DataProvider" finished-at="2019-02-13T11:24:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jann@o2.pl]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[haslo]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterIncorrectLoginData -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="closeDriverInstance" is-config="true" duration-ms="1" started-at="2019-02-13T11:24:30Z" finished-at="2019-02-13T11:24:30Z">
+        </test-method> <!-- enterExistingEmailTest -->
+        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@204f30ec]" name="closeDriverInstance" is-config="true" duration-ms="0" started-at="2019-02-13T11:29:05Z" finished-at="2019-02-13T11:29:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriverInstance -->
