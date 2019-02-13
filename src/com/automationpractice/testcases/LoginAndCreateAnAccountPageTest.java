@@ -13,12 +13,14 @@ import com.automationpractice.assertions.Compare;
 import com.automationpractice.base.Driver;
 import com.automationpractice.datagenerators.DataGenerator;
 import com.automationpractice.pages.LoginAndCreateAnAccountPage;
+import com.automationpractice.utility.Utility;
 
 public class LoginAndCreateAnAccountPageTest extends Driver{
 
-	
-	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class)
+	//@Ignore
+	@Test(dataProvider="Excel-OneColumn-DataProvider", dataProviderClass=DataGenerator.class)
 	public void createAnAccount_enterCorrectEmailTest(String email) throws IOException {
+		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		LoginAndCreateAnAccountPage page = new LoginAndCreateAnAccountPage(driver);
@@ -29,9 +31,10 @@ public class LoginAndCreateAnAccountPageTest extends Driver{
 		assertTrue(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
 	}
 	
-	
-	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class)
+	//@Ignore
+	@Test(dataProvider="Excel-OneColumn-DataProvider", dataProviderClass=DataGenerator.class)
 	public void createAnAccount_enterIncorrectEmailTest(String email) throws IOException {
+		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		LoginAndCreateAnAccountPage page = new LoginAndCreateAnAccountPage(driver);
@@ -42,13 +45,19 @@ public class LoginAndCreateAnAccountPageTest extends Driver{
 		assertFalse(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
 	}
 	
-//	@Test(dataProvider="Excel-Dataprovider", dataProviderClass=DataGenerator.class)
-//	public void enterCorrectLoginAndPassword(String login, String password) throws IOException {
-//		LoginAndCreateAnAccountPage page = new LoginAndCreateAnAccountPage(driver);
-//		
-//		page.enterEmailToLogIn(login);
-//		page.enterPasswordToLogIn(password);
-//		
-//	}
-	//jan@o2.pl  haslo
+	@Test(dataProvider="Excel-TwoColumns-DataProvider", dataProviderClass=DataGenerator.class)
+	public void logIn_enterCorrectLoginAndPasswordTest(String login, String password) throws IOException {
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		LoginAndCreateAnAccountPage page = new LoginAndCreateAnAccountPage(driver);
+		
+		page.enterEmailToLogIn(login);
+		page.enterPasswordToLogIn(password);
+		page.clickLogInButton();
+		
+		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("loggedUserURL")));
+		
+	}
+	
 }

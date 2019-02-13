@@ -12,8 +12,8 @@ import org.testng.annotations.DataProvider;
 
 public class DataGenerator {
 
-	@DataProvider(name="Excel-DataProvider")
-	public static Object[][] testDataGenerator(Method met) throws IOException{
+	@DataProvider(name="Excel-OneColumn-DataProvider")
+	public static Object[][] testDataGeneratorOneColumnSheet(Method met) throws IOException{
 
 		String sheetName = "";
 		if(met.getName().equalsIgnoreCase("createAnAccount_enterCorrectEmailTest")){
@@ -34,6 +34,34 @@ public class DataGenerator {
 			XSSFRow row = emailSheet.getRow(i);
 			XSSFCell email = row.getCell(0);
 			testData[i][0] = email.getStringCellValue();
+		}
+
+		return testData;
+
+	}
+
+	@DataProvider(name="Excel-TwoColumns-DataProvider")
+	public static Object[][] testDataGeneratorTwoColumnSheet(Method met) throws IOException{
+
+		String sheetName = "";
+		
+		if(met.getName().endsWith("logIn_enterCorrectLoginAndPasswordTest")) {
+			sheetName = "existingAccount";
+		}
+
+		FileInputStream file = new FileInputStream("./TestData/TestData.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet emailSheet = workbook.getSheet(sheetName);
+		int numberOfRows = emailSheet.getPhysicalNumberOfRows();
+
+		Object[][] testData = new Object[numberOfRows][2];
+
+		for(int i = 0; i < numberOfRows; i++) {
+			XSSFRow row = emailSheet.getRow(i);
+			XSSFCell login = row.getCell(0);
+			XSSFCell password = row.getCell(1);
+			testData[i][0] = login.getStringCellValue();
+			testData[i][1] = password.getStringCellValue();
 		}
 
 		return testData;
