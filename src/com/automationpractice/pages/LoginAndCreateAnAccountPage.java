@@ -68,6 +68,7 @@ public class LoginAndCreateAnAccountPage{
 		driver.findElement(By.id("addressAlias_txtField_id")).sendKeys(address);
 	}
 	
+	//textAreas
 	public void enterAdditionalInformation(String text) throws IOException{
 		driver.findElement(By.id("additionalInformation_txtArea_id")).sendKeys(text);
 	}
