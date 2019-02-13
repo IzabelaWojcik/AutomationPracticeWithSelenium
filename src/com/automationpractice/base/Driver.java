@@ -38,6 +38,6 @@ public class Driver {
 	
 	@AfterMethod
 	public void closeDriverInstance() {
-		driver.quit();
+		//driver.quit();
 	}
 }

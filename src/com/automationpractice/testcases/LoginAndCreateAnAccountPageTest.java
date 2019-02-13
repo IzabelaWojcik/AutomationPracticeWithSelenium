@@ -17,9 +17,9 @@ import com.automationpractice.utility.Utility;
 
 public class LoginAndCreateAnAccountPageTest extends Driver{
 
-	//@Ignore
+	@Ignore
 	@Test(dataProvider="Excel-OneColumn-DataProvider", dataProviderClass=DataGenerator.class)
-	public void createAnAccount_enterCorrectEmailTest(String email) throws IOException {
+	public void enterCorrectEmailTest(String email) throws IOException {
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
@@ -31,9 +31,9 @@ public class LoginAndCreateAnAccountPageTest extends Driver{
 		assertTrue(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
 	}
 	
-	//@Ignore
+	@Ignore
 	@Test(dataProvider="Excel-OneColumn-DataProvider", dataProviderClass=DataGenerator.class)
-	public void createAnAccount_enterIncorrectEmailTest(String email) throws IOException {
+	public void enterIncorrectEmailTest(String email) throws IOException {
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
@@ -45,8 +45,9 @@ public class LoginAndCreateAnAccountPageTest extends Driver{
 		assertFalse(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
 	}
 	
+	@Ignore
 	@Test(dataProvider="Excel-TwoColumns-DataProvider", dataProviderClass=DataGenerator.class)
-	public void logIn_enterCorrectLoginAndPasswordTest(String login, String password) throws IOException {
+	public void enterCorrectLoginAndPasswordTest(String login, String password) throws IOException {
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
@@ -59,5 +60,22 @@ public class LoginAndCreateAnAccountPageTest extends Driver{
 		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("loggedUserURL")));
 		
 	}
+	
+	@Test(dataProvider="Excel-TwoColumns-DataProvider", dataProviderClass=DataGenerator.class)
+	public void enterIncorrectLoginData(String login, String password) throws IOException{
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		LoginAndCreateAnAccountPage page = new LoginAndCreateAnAccountPage(driver);
+		
+		page.enterEmailToLogIn(login);
+		page.enterPasswordToLogIn(password);
+		page.clickLogInButton();
+		
+		assertFalse(Compare.validatePageURL(driver, Utility.fetchPropertyValue("loggedUserURL")));
+		
+		
+	}
+	
 	
 }

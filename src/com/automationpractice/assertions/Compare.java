@@ -36,7 +36,6 @@ public class Compare {
 			result = true;
 		}
 		catch(Exception e){
-			System.out.println("ERROR: element " + locType + "=" + locValue + " isn't displayed");
 		}
 
 		return result;

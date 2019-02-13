@@ -5,11 +5,9 @@
     <classes>
       <class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest">
         <methods>
-          <include name="createAnAccount_enterIncorrectEmailTest"/>
           <include name="initialDriverInstance"/>
           <include name="closeDriverInstance"/>
-          <include name="logIn_enterCorrectLoginAndPasswordTest"/>
-          <include name="createAnAccount_enterCorrectEmailTest" invocation-numbers="1"/>
+          <include name="enterIncorrectLoginData" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.automationpractice.testcases.LoginAndCreateAnAccountPageTest -->
     </classes>

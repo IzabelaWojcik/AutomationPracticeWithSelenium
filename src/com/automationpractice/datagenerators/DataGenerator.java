@@ -16,10 +16,10 @@ public class DataGenerator {
 	public static Object[][] testDataGeneratorOneColumnSheet(Method met) throws IOException{
 
 		String sheetName = "";
-		if(met.getName().equalsIgnoreCase("createAnAccount_enterCorrectEmailTest")){
+		if(met.getName().equalsIgnoreCase("enterCorrectEmailTest")){
 			sheetName = "emailCorrect";
 		}
-		else if(met.getName().equalsIgnoreCase("createAnAccount_enterIncorrectEmailTest")){
+		else if(met.getName().equalsIgnoreCase("enterIncorrectEmailTest")){
 			sheetName = "emailIncorrect";
 		}
 
@@ -45,8 +45,11 @@ public class DataGenerator {
 
 		String sheetName = "";
 		
-		if(met.getName().endsWith("logIn_enterCorrectLoginAndPasswordTest")) {
+		if(met.getName().endsWith("enterCorrectLoginAndPasswordTest")) {
 			sheetName = "existingAccount";
+		}
+		else if(met.getName().endsWith("enterIncorrectLoginData")) {
+			sheetName = "notExistingAccount";
 		}
 
 		FileInputStream file = new FileInputStream("./TestData/TestData.xlsx");
