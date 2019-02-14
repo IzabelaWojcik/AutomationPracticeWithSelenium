@@ -1,10 +1,13 @@
 package com.automationpractice.testcases;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
@@ -91,5 +94,66 @@ public class LoginAndCreateAnAccountPageTest extends Driver{
 		
 	}
 	
+	@Test(dataProvider="Excel-TwelveColumns-DataProvider", dataProviderClass=DataGenerator.class)
+	public void fillAllRegistrationFormWithCorrectData(String name, String lastname, String password, String company,
+			String address, String addressLine2, String city, int postCode, String additionalInformation,
+			int homeNumber, int mobileNumber, String addressAlias) throws IOException
+	{
+		driver.manage().timeouts().implicitlyWait(10,  TimeUnit.SECONDS);
+		
+		LoginAndCreateAnAccountPage page = new LoginAndCreateAnAccountPage(driver);
+		
+		String email = generateEmail();
+		page.enterEmailToCreateAnAccount(email);
+		page.clickCreateAnAccountButton();
+		
+		assertTrue(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
+		
+		page.checkGenderFemaleRadioButton();
+		page.checkGenderMaleRadioButton();
+		page.enterFirstname(name);
+		page.enterLastname(lastname);
+		page.enterPasswordToLogIn(password);
+		page.selectDayFromDropdownList();
+		page.selectMonthFromDropdownList();
+		page.selectYearFromDropdownList();
+		page.checkNewsletterCheckbox();
+		page.checkSpecialOffersCheckbox();
+		page.enterCompanyName(company);
+		page.enterAddress(address);
+		page.enterAddressLine2(addressLine2);
+		page.enterCity(city);
+		page.selectStateFromDropdownList();
+		page.enterPostCode(postCode);
+		page.enterAdditionalInformation(additionalInformation);
+		page.enterHomePhone(homeNumber);
+		page.enterMobilePhone(mobileNumber);
+		page.enterAddressAlias(addressAlias);
+		
+		assertEquals(page.getEmailFromTxtField(), email);
+		assertEquals(page.getFirstnameFromTxtField(), name);
+		assertEquals(page.getLastnameFromTxtField(), lastname);
+		
+		page.clickSubmitAccountButton();
+		
+		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("loggedUserURL")));
+		
+	}
+	
+	public String generateEmail() {
+		int length = 8;
+		
+		String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		             + "abcdefghijklmnopqrstuvwxyz"
+		             + "0123456789";
+		
+		String str = new Random().ints(length, 0, chars.length())
+		                         .mapToObj(i -> "" + chars.charAt(i))
+		                         .collect(Collectors.joining());
+		
+		String email = str + "@o2.pl";
+		
+		return email;
+	}
 	
 }

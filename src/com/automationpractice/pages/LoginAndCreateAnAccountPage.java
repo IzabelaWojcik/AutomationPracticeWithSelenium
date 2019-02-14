@@ -29,48 +29,60 @@ public class LoginAndCreateAnAccountPage{
 	}
 	
 	public void enterFirstname(String firstname) throws IOException{
-		driver.findElement(By.id("firstname_txtField_id")).sendKeys(firstname);
+		driver.findElement(By.id(Utility.fetchLocatorValue("firstname_txtField_id"))).sendKeys(firstname);
 	}
 	
 	public void enterLastname(String lastname) throws IOException{
-		driver.findElement(By.id("lastname_txtField_id")).sendKeys(lastname);
+		driver.findElement(By.id(Utility.fetchLocatorValue("lastname_txtField_id"))).sendKeys(lastname);
 	}
 	
 	public void enterCompanyName(String company) throws IOException{
-		driver.findElement(By.id("company_txtField_id")).sendKeys(company);
+		driver.findElement(By.id(Utility.fetchLocatorValue("company_txtField_id"))).sendKeys(company);
 	}
 	
 	public void enterAddress(String address) throws IOException{
-		driver.findElement(By.id("address_txtField_id")).sendKeys(address);
+		driver.findElement(By.id(Utility.fetchLocatorValue("address_txtField_id"))).sendKeys(address);
 	}
 	
 	public void enterAddressLine2(String address) throws IOException{
-		driver.findElement(By.id("addresLine2_txtField_id")).sendKeys(address);
+		driver.findElement(By.id(Utility.fetchLocatorValue("addresLine2_txtField_id"))).sendKeys(address);
 	}
 	
 	public void enterCity(String city) throws IOException{
-		driver.findElement(By.id("city_txtField_id")).sendKeys(city);
+		driver.findElement(By.id(Utility.fetchLocatorValue("city_txtField_id"))).sendKeys(city);
 	}
 	
-	public void postCode(String postCode) throws IOException{
-		driver.findElement(By.id("postCode_txtField_id")).sendKeys(postCode);
+	public void enterPostCode(int postCode) throws IOException{
+		driver.findElement(By.id(Utility.fetchLocatorValue("postCode_txtField_id"))).sendKeys(String.valueOf(postCode));
 	}
 	
-	public void enterHomePhone(String phoneNumber) throws IOException{
-		driver.findElement(By.id("homePhone_txtField_id")).sendKeys(phoneNumber);
+	public void enterHomePhone(int phoneNumber) throws IOException{
+		driver.findElement(By.id(Utility.fetchLocatorValue("homePhone_txtField_id"))).sendKeys(String.valueOf(phoneNumber));
 	}
 	
-	public void enterMobilePhone(String phoneNumber) throws IOException{
-		driver.findElement(By.id("mobilePhone_txtField_id")).sendKeys(phoneNumber);
+	public void enterMobilePhone(int phoneNumber) throws IOException{
+		driver.findElement(By.id(Utility.fetchLocatorValue("mobilePhone_txtField_id"))).sendKeys(String.valueOf(phoneNumber));
 	}
 	
 	public void enterAddressAlias(String address) throws IOException{
-		driver.findElement(By.id("addressAlias_txtField_id")).sendKeys(address);
+		driver.findElement(By.id(Utility.fetchLocatorValue("addressAlias_txtField_id"))).sendKeys(address);
+	}
+
+	public String getFirstnameFromTxtField() throws IOException{
+		return driver.findElement(By.id(Utility.fetchLocatorValue("firstname_autoFilledTxtField_id"))).getAttribute("value");
+	}
+	
+	public String getLastnameFromTxtField() throws IOException{
+		return driver.findElement(By.id(Utility.fetchLocatorValue("lastname_autoFilledTxtField_id"))).getAttribute("value");
+	}
+	
+	public String getEmailFromTxtField() throws IOException{
+		return driver.findElement(By.xpath(Utility.fetchLocatorValue("email_autoFilledTxtField_xpath"))).getAttribute("value");
 	}
 	
 	//textAreas
 	public void enterAdditionalInformation(String text) throws IOException{
-		driver.findElement(By.id("additionalInformation_txtArea_id")).sendKeys(text);
+		driver.findElement(By.id(Utility.fetchLocatorValue("additionalInformation_txtArea_id"))).sendKeys(text);
 	}
 		
 	//buttons
@@ -82,51 +94,51 @@ public class LoginAndCreateAnAccountPage{
 		driver.findElement(By.id(Utility.fetchLocatorValue("logIn_button_id"))).click();
 	}
 	
-	public void clickSubmitAccountAccountButton() throws IOException {
+	public void clickSubmitAccountButton() throws IOException {
 		driver.findElement(By.id(Utility.fetchLocatorValue("submitAccount_button_id"))).click();
 	}
 	
 	//radioButtons
-	public void checkGenderMaleRadioButton() {
-		driver.findElement(By.id("genderMale_radioButton_id")).click();
+	public void checkGenderMaleRadioButton() throws IOException {
+		driver.findElement(By.id(Utility.fetchLocatorValue("genderMale_radioButton_id"))).click();
 	}
 			
-	public void checkGenderFemaleRadioButton() {
-		driver.findElement(By.id("genderFemale_radioButton_id")).click();
+	public void checkGenderFemaleRadioButton() throws IOException {
+		driver.findElement(By.id(Utility.fetchLocatorValue("genderFemale_radioButton_id"))).click();
 	}
-		
+	
 	//checkBoxes
-	public void checkNewsletterCheckbox() {
-		driver.findElement(By.id("newsletter_checkbox_id")).click();
+	public void checkNewsletterCheckbox() throws IOException {
+		driver.findElement(By.id(Utility.fetchLocatorValue("newsletter_checkbox_id"))).click();
 	}
 			
-	public void checkSpecialOffersCheckbox() {
-		driver.findElement(By.id("specialOffers_checkbox_id")).click();
+	public void checkSpecialOffersCheckbox() throws IOException {
+		driver.findElement(By.id(Utility.fetchLocatorValue("specialOffers_checkbox_id"))).click();
 	}
 	
 	//dropdownLists
-	public void selectDayFromDropdownList() {
-		Select day = new Select(driver.findElement(By.id("chooseDay_dropdownList_id")));
+	public void selectDayFromDropdownList() throws IOException {
+		Select day = new Select(driver.findElement(By.id(Utility.fetchLocatorValue("chooseDay_dropdownList_id"))));
 		day.selectByIndex(2);
 	}
 	
-	public void selectMonthFromDropdownList() {
-		Select month = new Select(driver.findElement(By.id("chooseMonth_dropdownList_id")));
+	public void selectMonthFromDropdownList() throws IOException {
+		Select month = new Select(driver.findElement(By.id(Utility.fetchLocatorValue("chooseMonth_dropdownList_id"))));
 		month.selectByIndex(2);
 	}
 	
-	public void selectYearFromDropdownList() {
-		Select year = new Select(driver.findElement(By.id("chooseYear_dropdownList_id")));
+	public void selectYearFromDropdownList() throws IOException {
+		Select year = new Select(driver.findElement(By.id(Utility.fetchLocatorValue("chooseYear_dropdownList_id"))));
 		year.selectByIndex(2);
 	}
 	
-	public void selectStateFromDropdownList() {
-		Select state = new Select(driver.findElement(By.id("state_dropdownList_id")));
+	public void selectStateFromDropdownList() throws IOException {
+		Select state = new Select(driver.findElement(By.id(Utility.fetchLocatorValue("state_dropdownList_id"))));
 		state.selectByIndex(2);
 	}
 	
-	public void selectCountryFromDropdownList() {
-		Select country = new Select(driver.findElement(By.id("country_dropdownList_id")));
+	public void selectCountryFromDropdownList() throws IOException {
+		Select country = new Select(driver.findElement(By.id(Utility.fetchLocatorValue("country_dropdownList_id"))));
 		country.selectByIndex(2);
 	}
 	

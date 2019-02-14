@@ -1,7 +1,6 @@
 package com.automationpractice.datagenerators;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
@@ -85,7 +84,7 @@ public class DataGenerator {
 		String sheetName = "";
 		int numberOfColumns = 12;
 		
-		if(met.getName().endsWith("")) {
+		if(met.getName().endsWith("fillAllRegistrationFormWithCorrectData")) {
 			sheetName = "createAccountFormAllDataRequired";
 		}
 		
@@ -119,10 +118,10 @@ public class DataGenerator {
 			testData[i][4] = address.getStringCellValue();
 			testData[i][5] = addressLine2.getStringCellValue();
 			testData[i][6] = city.getStringCellValue();
-			testData[i][7] = postCode.getStringCellValue();
+			testData[i][7] = (int)postCode.getNumericCellValue(); 
 			testData[i][8] = additionalInformation.getStringCellValue();
-			testData[i][9] = homeNumber.getStringCellValue();
-			testData[i][10] = mobileNumber.getStringCellValue();
+			testData[i][9] = (int)homeNumber.getNumericCellValue();
+			testData[i][10] = (int)mobileNumber.getNumericCellValue();
 			testData[i][11] = addressAlias.getStringCellValue();
 		}
 		
