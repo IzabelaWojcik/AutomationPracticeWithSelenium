@@ -7,7 +7,7 @@
         <methods>
           <include name="initialDriverInstance"/>
           <include name="closeDriverInstance"/>
-          <include name="fillAllRegistrationFormWithCorrectData"/>
+          <include name="fillAllRegistrationFormWithCorrectData" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- com.automationpractice.testcases.LoginAndCreateAnAccountPageTest -->
     </classes>

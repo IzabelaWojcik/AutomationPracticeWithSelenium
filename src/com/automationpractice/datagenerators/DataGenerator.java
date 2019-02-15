@@ -1,9 +1,13 @@
 package com.automationpractice.datagenerators;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -17,7 +21,7 @@ public class DataGenerator {
 
 		String sheetName = "";
 		int numberOfColumns = 1;
-		
+
 		if(met.getName().equalsIgnoreCase("enterCorrectEmailTest")){
 			sheetName = "emailCorrect";
 		}
@@ -27,9 +31,7 @@ public class DataGenerator {
 		else if(met.getName().equalsIgnoreCase("enterExistingEmailTest")){
 			sheetName = "existingAccount";
 		}
-		FileInputStream file = new FileInputStream("./TestData/TestData.xlsx");
-		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		XSSFSheet sheet = workbook.getSheet(sheetName);
+		XSSFSheet sheet = createSheet(sheetName);
 		int numberOfRows = sheet.getPhysicalNumberOfRows();
 
 		Object[][] testData = new Object[numberOfRows][numberOfColumns];
@@ -49,7 +51,7 @@ public class DataGenerator {
 
 		String sheetName = "";
 		int numberOfColumns = 2;
-		
+
 		if(met.getName().endsWith("enterCorrectLoginAndPasswordTest")) {
 			sheetName = "existingAccount";
 		}
@@ -57,19 +59,17 @@ public class DataGenerator {
 			sheetName = "notExistingAccount";
 		}
 
-		FileInputStream file = new FileInputStream("./TestData/TestData.xlsx");
-		XSSFWorkbook workbook = new XSSFWorkbook(file);
-		XSSFSheet sheet = workbook.getSheet(sheetName);
+		XSSFSheet sheet = createSheet(sheetName);
 		int numberOfRows = sheet.getPhysicalNumberOfRows();
 
 		Object[][] testData = new Object[numberOfRows][numberOfColumns];
 
 		for(int i = 0; i < numberOfRows; i++) {
 			XSSFRow row = sheet.getRow(i);
-			
+
 			XSSFCell login = row.getCell(0);
 			XSSFCell password = row.getCell(1);
-			
+
 			testData[i][0] = login.getStringCellValue();
 			testData[i][1] = password.getStringCellValue();
 		}
@@ -77,55 +77,91 @@ public class DataGenerator {
 		return testData;
 
 	}
-	
-	@DataProvider(name="Excel-TwelveColumns-DataProvider")
+
+	@DataProvider(name="Excel-DataProvider")
 	public static Object[][] testDataGeneratorTwelveColumnsSheet(Method met) throws IOException{
-		
+
 		String sheetName = "";
-		int numberOfColumns = 12;
-		
+
 		if(met.getName().endsWith("fillAllRegistrationFormWithCorrectData")) {
 			sheetName = "createAccountFormAllDataRequired";
 		}
-		
+
+		XSSFSheet sheet = createSheet(sheetName);
+		int numberOfRows = getRowsCount(sheet);
+		int numberOfColumns = getColumnsCount(sheet);
+
+		Object[][] testData = new Object[numberOfRows-1][numberOfColumns];
+
+		for(int i = 1; i < numberOfRows; i++) {
+			for(int j = 0; j < numberOfColumns; j++) {
+				XSSFCell cell = sheet.getRow(i).getCell(j);
+
+				testData[i-1][j] = getCellValue(cell);
+			}
+		}
+
+		return testData;
+	}
+
+	private static Object getCellValue(Cell cell) {
+		Object cellValue = null;
+
+		if(cell != null) {
+
+			CellType cellType = cell.getCellTypeEnum();
+
+			if(cellType == CellType.STRING) {
+				cellValue = cell.getStringCellValue();
+			}
+
+			else if(cellType == CellType.NUMERIC) {
+				Double doubleValue = cell.getNumericCellValue();
+
+				if (DateUtil.isCellDateFormatted(cell)) {
+					cellValue = cell.getDateCellValue();
+				} 
+				else {
+					cellValue = cell.getNumericCellValue();
+
+					if(!doubleValue.toString().contains(".*")) {
+						cellValue = doubleValue.intValue();
+					}
+				}
+			}
+
+			else if(cellType == CellType.BOOLEAN) {
+				cellValue = cell.getBooleanCellValue();
+			}
+
+			else if(cellType == CellType.BLANK) {
+				cellValue = "";
+			}
+
+			else if (cellType == CellType.FORMULA) {
+				cellValue = cell.getCellFormula();
+			}
+
+		}
+		else {
+			cellValue = "";
+		}
+
+		return cellValue.toString();
+	}
+
+	private static XSSFSheet createSheet(String sheetName) throws FileNotFoundException, IOException {
 		FileInputStream file = new FileInputStream("./TestData/TestData.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 		XSSFSheet sheet = workbook.getSheet(sheetName);
-		int numberOfRows = sheet.getPhysicalNumberOfRows();
-		
-		Object[][] testData = new Object[numberOfRows][numberOfColumns];
-		
-		for(int i = 0; i < numberOfRows; i++) {
-			XSSFRow row = sheet.getRow(i);
-			
-			XSSFCell name = row.getCell(0);
-			XSSFCell lastname = row.getCell(1);
-			XSSFCell password = row.getCell(2);
-			XSSFCell company = row.getCell(3);
-			XSSFCell address = row.getCell(4);
-			XSSFCell addressLine2 = row.getCell(5);
-			XSSFCell city = row.getCell(6);
-			XSSFCell postCode = row.getCell(7);
-			XSSFCell additionalInformation = row.getCell(8);
-			XSSFCell homeNumber = row.getCell(9);
-			XSSFCell mobileNumber = row.getCell(10);
-			XSSFCell addressAlias = row.getCell(11);
-			
-			testData[i][0] = name.getStringCellValue();
-			testData[i][1] = lastname.getStringCellValue();
-			testData[i][2] = password.getStringCellValue();
-			testData[i][3] = company.getStringCellValue();
-			testData[i][4] = address.getStringCellValue();
-			testData[i][5] = addressLine2.getStringCellValue();
-			testData[i][6] = city.getStringCellValue();
-			testData[i][7] = (int)postCode.getNumericCellValue(); 
-			testData[i][8] = additionalInformation.getStringCellValue();
-			testData[i][9] = (int)homeNumber.getNumericCellValue();
-			testData[i][10] = (int)mobileNumber.getNumericCellValue();
-			testData[i][11] = addressAlias.getStringCellValue();
-		}
-		
-		return testData;
+		return sheet;
 	}
-	
+
+	private static int getRowsCount(XSSFSheet sheet) {
+		return sheet.getPhysicalNumberOfRows();
+	}
+
+	private static int getColumnsCount(XSSFSheet sheet) {
+		return sheet.getRow(0).getPhysicalNumberOfCells();
+	}
 }

@@ -94,17 +94,19 @@ public class LoginAndCreateAnAccountPageTest extends Driver{
 		
 	}
 	
-	@Test(dataProvider="Excel-TwelveColumns-DataProvider", dataProviderClass=DataGenerator.class)
+	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class)
 	public void fillAllRegistrationFormWithCorrectData(String name, String lastname, String password, String company,
-			String address, String addressLine2, String city, int postCode, String additionalInformation,
-			int homeNumber, int mobileNumber, String addressAlias) throws IOException
+			String address, String addressLine2, String city, String postCode, String additionalInformation,
+			String homeNumber, String mobileNumber, String addressAlias) throws IOException
 	{
-		driver.manage().timeouts().implicitlyWait(10,  TimeUnit.SECONDS);
-		
 		LoginAndCreateAnAccountPage page = new LoginAndCreateAnAccountPage(driver);
 		
 		String email = generateEmail();
+		
+		driver.manage().timeouts().implicitlyWait(10,  TimeUnit.SECONDS);
+		
 		page.enterEmailToCreateAnAccount(email);
+		System.out.println(email);
 		page.clickCreateAnAccountButton();
 		
 		assertTrue(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
@@ -134,7 +136,7 @@ public class LoginAndCreateAnAccountPageTest extends Driver{
 		assertEquals(page.getFirstnameFromTxtField(), name);
 		assertEquals(page.getLastnameFromTxtField(), lastname);
 		
-		page.clickSubmitAccountButton();
+		//page.clickSubmitAccountButton();
 		
 		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("loggedUserURL")));
 		

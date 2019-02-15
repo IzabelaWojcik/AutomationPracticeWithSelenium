@@ -52,16 +52,16 @@ public class LoginAndCreateAnAccountPage{
 		driver.findElement(By.id(Utility.fetchLocatorValue("city_txtField_id"))).sendKeys(city);
 	}
 	
-	public void enterPostCode(int postCode) throws IOException{
+	public void enterPostCode(String postCode) throws IOException{
 		driver.findElement(By.id(Utility.fetchLocatorValue("postCode_txtField_id"))).sendKeys(String.valueOf(postCode));
 	}
 	
-	public void enterHomePhone(int phoneNumber) throws IOException{
-		driver.findElement(By.id(Utility.fetchLocatorValue("homePhone_txtField_id"))).sendKeys(String.valueOf(phoneNumber));
+	public void enterHomePhone(String homeNumber) throws IOException{
+		driver.findElement(By.id(Utility.fetchLocatorValue("homePhone_txtField_id"))).sendKeys(String.valueOf(homeNumber));
 	}
 	
-	public void enterMobilePhone(int phoneNumber) throws IOException{
-		driver.findElement(By.id(Utility.fetchLocatorValue("mobilePhone_txtField_id"))).sendKeys(String.valueOf(phoneNumber));
+	public void enterMobilePhone(String mobileNumber) throws IOException{
+		driver.findElement(By.id(Utility.fetchLocatorValue("mobilePhone_txtField_id"))).sendKeys(String.valueOf(mobileNumber));
 	}
 	
 	public void enterAddressAlias(String address) throws IOException{
