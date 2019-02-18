@@ -8,106 +8,26 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">29 472</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">16</td><td class="num">0</td><td class="num">0</td><td class="num">170,901</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest</td><td><a href="#m0">fillAllRegistrationFormWithCorrectData</a></td><td rowspan="3">1550217045946</td><td rowspan="3">4389</td></tr><tr class="failedeven"><td><a href="#m1">fillAllRegistrationFormWithCorrectData</a></td></tr><tr class="failedeven"><td><a href="#m2">fillAllRegistrationFormWithCorrectData</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="16">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest</td><td><a href="#m0">enterCorrectEmailTest</a></td><td rowspan="3">1550514730031</td><td rowspan="3">1485</td></tr><tr class="passedeven"><td><a href="#m1">enterCorrectEmailTest</a></td></tr><tr class="passedeven"><td><a href="#m2">enterCorrectEmailTest</a></td></tr><tr class="passedeven"><td><a href="#m3">enterCorrectLoginAndPasswordTest</a></td><td rowspan="1">1550514747849</td><td rowspan="1">1403</td></tr><tr class="passedeven"><td><a href="#m4">enterExistingEmailTest</a></td><td rowspan="1">1550514756175</td><td rowspan="1">3351</td></tr><tr class="passedeven"><td><a href="#m5">enterIncorrectEmailTest</a></td><td rowspan="8">1550514766628</td><td rowspan="8">3374</td></tr><tr class="passedeven"><td><a href="#m6">enterIncorrectEmailTest</a></td></tr><tr class="passedeven"><td><a href="#m7">enterIncorrectEmailTest</a></td></tr><tr class="passedeven"><td><a href="#m8">enterIncorrectEmailTest</a></td></tr><tr class="passedeven"><td><a href="#m9">enterIncorrectEmailTest</a></td></tr><tr class="passedeven"><td><a href="#m10">enterIncorrectEmailTest</a></td></tr><tr class="passedeven"><td><a href="#m11">enterIncorrectEmailTest</a></td></tr><tr class="passedeven"><td><a href="#m12">enterIncorrectEmailTest</a></td></tr><tr class="passedeven"><td><a href="#m13">fillAllRegistrationFormWithCorrectData</a></td><td rowspan="3">1550514852047</td><td rowspan="3">5803</td></tr><tr class="passedeven"><td><a href="#m14">fillAllRegistrationFormWithCorrectData</a></td></tr><tr class="passedeven"><td><a href="#m15">fillAllRegistrationFormWithCorrectData</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#fillAllRegistrationFormWithCorrectData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th></tr><tr class="param stripe"><td>Jan</td><td>Kowalski</td><td>Password1</td><td>Company a</td><td>Lisia</td><td>3/1</td><td>Wrocław</td><td>88222</td><td>This is my registration data</td><td>258147</td><td>852369823</td><td>jk@gmail.com</td></tr><tr><th colspan="12">Exception</th></tr><tr><td colspan="12"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.automationpractice.testcases.LoginAndCreateAnAccountPageTest.fillAllRegistrationFormWithCorrectData(LoginAndCreateAnAccountPageTest.java:141)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#fillAllRegistrationFormWithCorrectData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th></tr><tr class="param stripe"><td>Adam</td><td>Nowak</td><td>Haslo11A_*</td><td>Company Name</td><td>Prosta</td><td>2/1</td><td>Warszawa</td><td>99877</td><td></td><td>258147</td><td></td><td></td></tr><tr><th colspan="12">Exception</th></tr><tr><td colspan="12"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.automationpractice.testcases.LoginAndCreateAnAccountPageTest.fillAllRegistrationFormWithCorrectData(LoginAndCreateAnAccountPageTest.java:141)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#fillAllRegistrationFormWithCorrectData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th></tr><tr class="param stripe"><td>Grażyna</td><td>Wiśniewska</td><td>Haslo**</td><td>Company 1</td><td>Słoneczna</td><td>23/12</td><td>Zielona góra</td><td>12234</td><td></td><td></td><td>123123123</td><td></td></tr><tr><th colspan="12">Exception</th></tr><tr><td colspan="12"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.automationpractice.testcases.LoginAndCreateAnAccountPageTest.fillAllRegistrationFormWithCorrectData(LoginAndCreateAnAccountPageTest.java:141)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterCorrectEmailTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Automationtesting65@o2.pl</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterCorrectEmailTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>automationtesting@onet.pl</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterCorrectEmailTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>automationtesting65@gmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterCorrectLoginAndPasswordTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>jan@o2.pl</td><td>haslo</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterExistingEmailTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>jan@o2.pl</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterIncorrectEmailTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>automationtesting65gmail.com </td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterIncorrectEmailTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>automationtesting65@@gmail.com </td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterIncorrectEmailTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Automationtes ting65@ll.pl</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterIncorrectEmailTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>automationtesting65@ll .pl</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterIncorrectEmailTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>automationtesting6@onet..pl</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterIncorrectEmailTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>automationtesting65</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterIncorrectEmailTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>@gmail.com </td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#enterIncorrectEmailTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>automationtesting65@</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#fillAllRegistrationFormWithCorrectData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th></tr><tr class="param stripe"><td>Jan</td><td>Kowalski</td><td>Password1</td><td>Company a</td><td>Lisia</td><td>3</td><td>Wrocław</td><td>88222</td><td>This is my registration data</td><td>258147</td><td>852369823</td><td>jk@gmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#fillAllRegistrationFormWithCorrectData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th></tr><tr class="param stripe"><td>Adam</td><td>Nowak</td><td>Haslo11A_*</td><td>Company Name</td><td>Prosta</td><td>2/1</td><td>Warszawa</td><td>99877</td><td></td><td>258147</td><td></td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest#fillAllRegistrationFormWithCorrectData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th></tr><tr class="param stripe"><td>Grażyna</td><td>Wiśniewska</td><td>Haslo**</td><td>Company 1</td><td>Słoneczna</td><td>23/12</td><td>Zielona góra</td><td>12234</td><td></td><td></td><td>123123123</td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

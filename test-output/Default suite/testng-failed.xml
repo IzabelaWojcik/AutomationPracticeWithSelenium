@@ -5,9 +5,10 @@
     <classes>
       <class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest">
         <methods>
-          <include name="initialDriverInstance"/>
-          <include name="closeDriverInstance"/>
-          <include name="fillAllRegistrationFormWithCorrectData" invocation-numbers="0 1 2"/>
+          <include name="setupBeforeClass"/>
+          <include name="setupBeforeMethod"/>
+          <include name="enterCorrectLoginAndPasswordTest" invocation-numbers="0"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- com.automationpractice.testcases.LoginAndCreateAnAccountPageTest -->
     </classes>

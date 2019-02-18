@@ -1,17 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="5" total="8" passed="0">
+<testng-results skipped="0" failed="0" ignored="2" total="18" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29472" started-at="2019-02-15T07:50:39Z" finished-at="2019-02-15T07:51:08Z">
+  <suite name="Suite" duration-ms="170901" started-at="2019-02-18T18:31:55Z" finished-at="2019-02-18T18:34:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29472" started-at="2019-02-15T07:50:39Z" finished-at="2019-02-15T07:51:08Z">
+    <test name="Test" duration-ms="170901" started-at="2019-02-18T18:31:55Z" finished-at="2019-02-18T18:34:45Z">
       <class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest">
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@548e7350]" name="initialDriverInstance" is-config="true" duration-ms="6199" started-at="2019-02-15T07:50:39Z" finished-at="2019-02-15T07:50:45Z">
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5981" started-at="2019-02-18T18:31:55Z" finished-at="2019-02-18T18:32:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialDriverInstance -->
-        <test-method status="FAIL" signature="fillAllRegistrationFormWithCorrectData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@548e7350]" name="fillAllRegistrationFormWithCorrectData" duration-ms="4389" started-at="2019-02-15T07:50:45Z" data-provider="Excel-DataProvider" finished-at="2019-02-15T07:50:50Z">
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterCorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterCorrectEmailTest" duration-ms="1391" started-at="2019-02-18T18:32:01Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:32:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[automationtesting65@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterCorrectEmailTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1827" started-at="2019-02-18T18:32:03Z" finished-at="2019-02-18T18:32:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5189" started-at="2019-02-18T18:32:04Z" finished-at="2019-02-18T18:32:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterCorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterCorrectEmailTest" duration-ms="1485" started-at="2019-02-18T18:32:10Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:32:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automationtesting65@o2.pl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterCorrectEmailTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1881" started-at="2019-02-18T18:32:11Z" finished-at="2019-02-18T18:32:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5461" started-at="2019-02-18T18:32:13Z" finished-at="2019-02-18T18:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterCorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterCorrectEmailTest" duration-ms="1342" started-at="2019-02-18T18:32:18Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:32:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[automationtesting@onet.pl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterCorrectEmailTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1829" started-at="2019-02-18T18:32:20Z" finished-at="2019-02-18T18:32:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5755" started-at="2019-02-18T18:32:22Z" finished-at="2019-02-18T18:32:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterCorrectLoginAndPasswordTest(java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterCorrectLoginAndPasswordTest" duration-ms="1403" started-at="2019-02-18T18:32:27Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:32:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jan@o2.pl]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[haslo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterCorrectLoginAndPasswordTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1868" started-at="2019-02-18T18:32:29Z" finished-at="2019-02-18T18:32:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="4992" started-at="2019-02-18T18:32:31Z" finished-at="2019-02-18T18:32:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterExistingEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterExistingEmailTest" duration-ms="3351" started-at="2019-02-18T18:32:36Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:32:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jan@o2.pl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterExistingEmailTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1861" started-at="2019-02-18T18:32:39Z" finished-at="2019-02-18T18:32:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5175" started-at="2019-02-18T18:32:41Z" finished-at="2019-02-18T18:32:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterIncorrectEmailTest" duration-ms="3374" started-at="2019-02-18T18:32:46Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:32:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[automationtesting65gmail.com ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterIncorrectEmailTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1888" started-at="2019-02-18T18:32:50Z" finished-at="2019-02-18T18:32:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="6596" started-at="2019-02-18T18:32:51Z" finished-at="2019-02-18T18:32:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterIncorrectEmailTest" duration-ms="3319" started-at="2019-02-18T18:32:58Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:33:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@gmail.com ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterIncorrectEmailTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1843" started-at="2019-02-18T18:33:01Z" finished-at="2019-02-18T18:33:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5362" started-at="2019-02-18T18:33:03Z" finished-at="2019-02-18T18:33:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterIncorrectEmailTest" duration-ms="3339" started-at="2019-02-18T18:33:09Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:33:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[automationtesting65@]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterIncorrectEmailTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1828" started-at="2019-02-18T18:33:12Z" finished-at="2019-02-18T18:33:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5119" started-at="2019-02-18T18:33:14Z" finished-at="2019-02-18T18:33:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterIncorrectEmailTest" duration-ms="3372" started-at="2019-02-18T18:33:19Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:33:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[automationtesting65]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterIncorrectEmailTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1951" started-at="2019-02-18T18:33:22Z" finished-at="2019-02-18T18:33:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5474" started-at="2019-02-18T18:33:24Z" finished-at="2019-02-18T18:33:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterIncorrectEmailTest" duration-ms="3352" started-at="2019-02-18T18:33:30Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:33:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[automationtesting65@@gmail.com ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterIncorrectEmailTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1875" started-at="2019-02-18T18:33:33Z" finished-at="2019-02-18T18:33:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5656" started-at="2019-02-18T18:33:35Z" finished-at="2019-02-18T18:33:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterIncorrectEmailTest" duration-ms="3357" started-at="2019-02-18T18:33:40Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:33:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[automationtesting65@ll .pl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterIncorrectEmailTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1828" started-at="2019-02-18T18:33:44Z" finished-at="2019-02-18T18:33:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5101" started-at="2019-02-18T18:33:46Z" finished-at="2019-02-18T18:33:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterIncorrectEmailTest" duration-ms="3350" started-at="2019-02-18T18:33:51Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:33:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automationtes ting65@ll.pl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterIncorrectEmailTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1836" started-at="2019-02-18T18:33:54Z" finished-at="2019-02-18T18:33:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5143" started-at="2019-02-18T18:33:56Z" finished-at="2019-02-18T18:34:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="enterIncorrectEmailTest(java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterIncorrectEmailTest" duration-ms="3347" started-at="2019-02-18T18:34:01Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:34:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[automationtesting6@onet..pl]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterIncorrectEmailTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1892" started-at="2019-02-18T18:34:04Z" finished-at="2019-02-18T18:34:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5171" started-at="2019-02-18T18:34:06Z" finished-at="2019-02-18T18:34:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="fillAllRegistrationFormWithCorrectData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="fillAllRegistrationFormWithCorrectData" duration-ms="5803" started-at="2019-02-18T18:34:12Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:34:17Z">
           <params>
             <param index="0">
               <value>
@@ -40,7 +292,7 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[3/1]]>
+                <![CDATA[3]]>
               </value>
             </param>
             <param index="6">
@@ -74,57 +326,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.automationpractice.testcases.LoginAndCreateAnAccountPageTest.fillAllRegistrationFormWithCorrectData(LoginAndCreateAnAccountPageTest.java:141)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillAllRegistrationFormWithCorrectData -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@548e7350]" name="closeDriverInstance" is-config="true" duration-ms="0" started-at="2019-02-15T07:50:50Z" finished-at="2019-02-15T07:50:50Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1890" started-at="2019-02-18T18:34:17Z" finished-at="2019-02-18T18:34:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@548e7350]" name="initialDriverInstance" is-config="true" duration-ms="4883" started-at="2019-02-15T07:50:50Z" finished-at="2019-02-15T07:50:55Z">
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5585" started-at="2019-02-18T18:34:19Z" finished-at="2019-02-18T18:34:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialDriverInstance -->
-        <test-method status="FAIL" signature="fillAllRegistrationFormWithCorrectData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@548e7350]" name="fillAllRegistrationFormWithCorrectData" duration-ms="4291" started-at="2019-02-15T07:50:55Z" data-provider="Excel-DataProvider" finished-at="2019-02-15T07:50:59Z">
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="fillAllRegistrationFormWithCorrectData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="fillAllRegistrationFormWithCorrectData" duration-ms="5675" started-at="2019-02-18T18:34:25Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:34:31Z">
           <params>
             <param index="0">
               <value>
@@ -187,57 +400,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.automationpractice.testcases.LoginAndCreateAnAccountPageTest.fillAllRegistrationFormWithCorrectData(LoginAndCreateAnAccountPageTest.java:141)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillAllRegistrationFormWithCorrectData -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@548e7350]" name="closeDriverInstance" is-config="true" duration-ms="0" started-at="2019-02-15T07:50:59Z" finished-at="2019-02-15T07:50:59Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1926" started-at="2019-02-18T18:34:31Z" finished-at="2019-02-18T18:34:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeDriverInstance -->
-        <test-method status="PASS" signature="initialDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@548e7350]" name="initialDriverInstance" is-config="true" duration-ms="4996" started-at="2019-02-15T07:50:59Z" finished-at="2019-02-15T07:51:04Z">
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="5563" started-at="2019-02-18T18:34:32Z" finished-at="2019-02-18T18:34:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialDriverInstance -->
-        <test-method status="FAIL" signature="fillAllRegistrationFormWithCorrectData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@548e7350]" name="fillAllRegistrationFormWithCorrectData" duration-ms="4272" started-at="2019-02-15T07:51:04Z" data-provider="Excel-DataProvider" finished-at="2019-02-15T07:51:08Z">
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="fillAllRegistrationFormWithCorrectData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="fillAllRegistrationFormWithCorrectData" duration-ms="5598" started-at="2019-02-18T18:34:38Z" data-provider="Excel-DataProvider" finished-at="2019-02-18T18:34:44Z">
           <params>
             <param index="0">
               <value>
@@ -300,53 +474,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.automationpractice.testcases.LoginAndCreateAnAccountPageTest.fillAllRegistrationFormWithCorrectData(LoginAndCreateAnAccountPageTest.java:141)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillAllRegistrationFormWithCorrectData -->
-        <test-method status="PASS" signature="closeDriverInstance()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@548e7350]" name="closeDriverInstance" is-config="true" duration-ms="0" started-at="2019-02-15T07:51:08Z" finished-at="2019-02-15T07:51:08Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="teardown" is-config="true" duration-ms="1829" started-at="2019-02-18T18:34:44Z" finished-at="2019-02-18T18:34:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeDriverInstance -->
+        </test-method> <!-- teardown -->
       </class> <!-- com.automationpractice.testcases.LoginAndCreateAnAccountPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

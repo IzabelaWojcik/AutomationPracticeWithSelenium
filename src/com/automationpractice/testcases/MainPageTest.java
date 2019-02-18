@@ -7,11 +7,11 @@ import java.io.IOException;
 import org.testng.annotations.Test;
 
 import com.automationpractice.assertions.Compare;
-import com.automationpractice.base.Driver;
+import com.automationpractice.base.SetUps;
 import com.automationpractice.pages.MainPage;
 import com.automationpractice.utility.Utility;
 
-public class MainPageTest extends Driver{
+public class MainPageTest extends SetUps{
 
 	@Test
 	public void onPressLogInButtonMoveToLoginSiteTest() throws IOException {
