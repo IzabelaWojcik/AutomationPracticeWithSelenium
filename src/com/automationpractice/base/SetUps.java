@@ -15,8 +15,7 @@ public class SetUps {
 	public static WebDriver driver;
 
 	@BeforeMethod
-	public void setupBeforeMethod() {
-		try {
+	public void setupBeforeMethod() throws IOException {
 			if(Utility.fetchPropertyValue("browserName").equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 				driver = new ChromeDriver();
@@ -34,21 +33,11 @@ public class SetUps {
 				driver = new ChromeDriver();
 			}
 			
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-		
-		try {
-			
 			driver.get(Utility.fetchPropertyValue("loginAndCreateAnAccountURL"));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
 	}
 
 	@AfterMethod
-	public static void teardown() {
+	public static void tearDown() {
 		driver.quit();
 	}
 

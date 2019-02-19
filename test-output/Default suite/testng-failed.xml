@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest">
+      <class name="com.automationpractice.testcases.MainPageTest">
         <methods>
-          <include name="setupBeforeClass"/>
           <include name="setupBeforeMethod"/>
-          <include name="enterCorrectLoginAndPasswordTest" invocation-numbers="0"/>
           <include name="teardown"/>
+          <include name="onPressLogInButtonMoveToLoginSiteTest"/>
         </methods>
-      </class> <!-- com.automationpractice.testcases.LoginAndCreateAnAccountPageTest -->
+      </class> <!-- com.automationpractice.testcases.MainPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
