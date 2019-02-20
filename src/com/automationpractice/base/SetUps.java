@@ -7,14 +7,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import com.automationpractice.utility.Utility;
 
 public class SetUps {
 	public static WebDriver driver;
-
-	@BeforeMethod
+	String openedURL = "";
+	
+	@BeforeMethod(alwaysRun=true)
+	//@Parameters("openedURL")
 	public void setupBeforeMethod() throws IOException {
+		//	this.openedURL = openedURL;
+			
 			if(Utility.fetchPropertyValue("browserName").equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 				driver = new ChromeDriver();
@@ -29,10 +34,10 @@ public class SetUps {
 			}
 			
 			driver.manage().window().maximize();
-			driver.get(Utility.fetchPropertyValue("loginAndCreateAnAccountURL"));
+			driver.get(Utility.fetchPropertyValue("applicationURL"));
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public static void tearDown() {
 		driver.quit();
 	}

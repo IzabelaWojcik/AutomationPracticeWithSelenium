@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Suite]]" parallel="tests">
+  <listeners>
+    <listener class-name="com.automationpractice.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="TestOnFirefox(failed)(failed)" parallel="tests">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.automationpractice.testcases.MainPageTest">
+        <methods>
+          <include name="setupBeforeMethod"/>
+          <include name="tearDown"/>
+          <include name="onPressLogInButtonMoveToLoginSiteTest"/>
+        </methods>
+      </class> <!-- com.automationpractice.testcases.MainPageTest -->
+    </classes>
+  </test> <!-- TestOnFirefox(failed)(failed) -->
+  <test thread-count="5" name="TestOnChrome(failed)(failed)" parallel="tests">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.automationpractice.testcases.MainPageTest">
+        <methods>
+          <include name="setupBeforeMethod"/>
+          <include name="tearDown"/>
+          <include name="onPressLogInButtonMoveToLoginSiteTest"/>
+        </methods>
+      </class> <!-- com.automationpractice.testcases.MainPageTest -->
+    </classes>
+  </test> <!-- TestOnChrome(failed)(failed) -->
+  <test thread-count="5" name="TestOnIE(failed)(failed)" parallel="tests">
+    <parameter name="browserName" value="ie"/>
+    <classes>
+      <class name="com.automationpractice.testcases.MainPageTest">
+        <methods>
+          <include name="setupBeforeMethod"/>
+          <include name="tearDown"/>
+          <include name="onPressLogInButtonMoveToLoginSiteTest"/>
+        </methods>
+      </class> <!-- com.automationpractice.testcases.MainPageTest -->
+    </classes>
+  </test> <!-- TestOnIE(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->

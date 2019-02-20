@@ -1,47 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="7" passed="2">
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="17070" started-at="2019-02-20T08:14:51Z" finished-at="2019-02-20T08:15:08Z">
+  <suite name="Suite" duration-ms="10685" started-at="2019-02-20T12:55:01Z" finished-at="2019-02-20T12:55:12Z">
     <groups>
+      <group name="logIn">
+        <method signature="MainPageTest.onPressLogInButtonMoveToLoginSiteTest()[pri:0, instance:com.automationpractice.testcases.MainPageTest@6e06451e]" name="onPressLogInButtonMoveToLoginSiteTest" class="com.automationpractice.testcases.MainPageTest"/>
+      </group> <!-- logIn -->
+      <group name="mainPageTests">
+        <method signature="MainPageTest.onPressLogInButtonMoveToLoginSiteTest()[pri:0, instance:com.automationpractice.testcases.MainPageTest@6e06451e]" name="onPressLogInButtonMoveToLoginSiteTest" class="com.automationpractice.testcases.MainPageTest"/>
+      </group> <!-- mainPageTests -->
     </groups>
-    <test name="Test" duration-ms="17070" started-at="2019-02-20T08:14:51Z" finished-at="2019-02-20T08:15:08Z">
-      <class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest">
-        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="setupBeforeMethod" is-config="true" duration-ms="6861" started-at="2019-02-20T08:14:52Z" finished-at="2019-02-20T08:14:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBeforeMethod -->
-        <test-method status="PASS" signature="enterCorrectLoginAndPasswordTest(java.lang.String, java.lang.String)[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="enterCorrectLoginAndPasswordTest" duration-ms="1407" started-at="2019-02-20T08:14:58Z" data-provider="Excel-DataProvider" finished-at="2019-02-20T08:15:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jan@o2.pl]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[haslo]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterCorrectLoginAndPasswordTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationpractice.testcases.LoginAndCreateAnAccountPageTest@31a5c39e]" name="tearDown" is-config="true" duration-ms="640" started-at="2019-02-20T08:15:00Z" finished-at="2019-02-20T08:15:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.automationpractice.testcases.LoginAndCreateAnAccountPageTest -->
+    <test name="Test" duration-ms="10685" started-at="2019-02-20T12:55:01Z" finished-at="2019-02-20T12:55:12Z">
       <class name="com.automationpractice.testcases.MainPageTest">
-        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.MainPageTest@3f49dace]" name="setupBeforeMethod" is-config="true" duration-ms="5787" started-at="2019-02-20T08:15:00Z" finished-at="2019-02-20T08:15:06Z">
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.MainPageTest@6e06451e]" name="setupBeforeMethod" is-config="true" duration-ms="7134" started-at="2019-02-20T12:55:01Z" finished-at="2019-02-20T12:55:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBeforeMethod -->
-        <test-method status="PASS" signature="onPressLogInButtonMoveToLoginSiteTest()[pri:0, instance:com.automationpractice.testcases.MainPageTest@3f49dace]" name="onPressLogInButtonMoveToLoginSiteTest" duration-ms="1191" started-at="2019-02-20T08:15:06Z" finished-at="2019-02-20T08:15:07Z">
+        <test-method status="PASS" signature="onPressLogInButtonMoveToLoginSiteTest()[pri:0, instance:com.automationpractice.testcases.MainPageTest@6e06451e]" name="onPressLogInButtonMoveToLoginSiteTest" duration-ms="1806" started-at="2019-02-20T12:55:08Z" finished-at="2019-02-20T12:55:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onPressLogInButtonMoveToLoginSiteTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationpractice.testcases.MainPageTest@3f49dace]" name="tearDown" is-config="true" duration-ms="641" started-at="2019-02-20T08:15:07Z" finished-at="2019-02-20T08:15:08Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationpractice.testcases.MainPageTest@6e06451e]" name="tearDown" is-config="true" duration-ms="1562" started-at="2019-02-20T12:55:10Z" finished-at="2019-02-20T12:55:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
