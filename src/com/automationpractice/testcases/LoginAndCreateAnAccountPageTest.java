@@ -21,7 +21,7 @@ import com.automationpractice.utility.Utility;
 public class LoginAndCreateAnAccountPageTest extends SetUps{
 	private int waitForSeconds = 3;
 	
-	//@Ignore
+	@Ignore
 	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class)
 	public void enterCorrectEmailTest(String email) throws IOException {
 		
@@ -35,7 +35,7 @@ public class LoginAndCreateAnAccountPageTest extends SetUps{
 		assertTrue(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
 	}
 	
-	//@Ignore
+	@Ignore
 	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class)
 	public void enterIncorrectEmailTest(String email) throws IOException {
 		
@@ -49,7 +49,7 @@ public class LoginAndCreateAnAccountPageTest extends SetUps{
 		assertFalse(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
 	}
 	
-	//@Ignore
+	@Ignore
 	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class)
 	public void enterExistingEmailTest(String email) throws IOException {
 		
@@ -63,7 +63,7 @@ public class LoginAndCreateAnAccountPageTest extends SetUps{
 		assertFalse(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
 	}
 	
-	//@Ignore
+	@Ignore
 	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class)
 	public void enterIncorrectLoginData(String login, String password) throws IOException{
 		
@@ -79,7 +79,7 @@ public class LoginAndCreateAnAccountPageTest extends SetUps{
 		
 	}
 	
-	//@Ignore
+	@Ignore
 	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class)
 	public void fillAllRegistrationFormWithCorrectData(String name, String lastname, String password, String company,
 			String address, String addressLine2, String city, String postCode, String additionalInformation,
