@@ -74,7 +74,7 @@ public class TestListener extends SetUps implements ITestListener{
 			test.info("ScreenShot available here: " + screenShot);
 		
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("Unalble to take a screenShot");
 		}
 
 	}
@@ -99,7 +99,7 @@ public class TestListener extends SetUps implements ITestListener{
 		File target = new File(path);
 
 		FileUtils.copyFile(scrFile,target);
-
+		
 		return path;
 	}
 

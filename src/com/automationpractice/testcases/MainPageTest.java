@@ -13,7 +13,7 @@ import com.automationpractice.utility.Utility;
 
 public class MainPageTest extends SetUps{
 
-	@Test
+	@Test(groups= {"mainPageTests", "logIn"})
 	public void onPressLogInButtonMoveToLoginSiteTest() throws IOException {
 		MainPage mainPage = new MainPage(driver);
 		

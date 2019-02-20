@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.automationpractice.listeners.TestListener"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="mainPageTests"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.automationpractice.testcases.MainPageTest">
         <methods>
-          <include name="setupBeforeMethod"/>
-          <include name="tearDown"/>
           <include name="onPressLogInButtonMoveToLoginSiteTest"/>
         </methods>
       </class> <!-- com.automationpractice.testcases.MainPageTest -->
