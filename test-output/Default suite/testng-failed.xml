@@ -3,18 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest">
+      <class name="com.automationpractice.testcases.MainPageTest">
         <methods>
-          <include name="enterIncorrectEmailTest"/>
-          <include name="enterExistingEmailTest"/>
-          <include name="enterIncorrectLoginData"/>
+          <include name="moveOverElementShowsBuyingAndDetailsOptions"/>
           <include name="setupBeforeMethod"/>
-          <include name="enterCorrectLoginAndPasswordTest"/>
-          <include name="enterCorrectEmailTest"/>
           <include name="tearDown"/>
-          <include name="fillAllRegistrationFormWithCorrectData"/>
+          <include name="onPressLogInButtonMoveToLoginSiteTest"/>
         </methods>
-      </class> <!-- com.automationpractice.testcases.LoginAndCreateAnAccountPageTest -->
+      </class> <!-- com.automationpractice.testcases.MainPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

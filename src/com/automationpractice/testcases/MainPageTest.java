@@ -13,12 +13,20 @@ import com.automationpractice.utility.Utility;
 
 public class MainPageTest extends SetUps{
 
-	@Test(groups= {"mainPageTests", "logIn"})
+	@Test(groups={"mainPageTests", "logIn"})
 	public void onPressLogInButtonMoveToLoginSiteTest() throws IOException {
-		MainPage mainPage = new MainPage(driver);
+		MainPage page = new MainPage(driver);
 		
-		mainPage.clickLogInButton();
+		page.clickLogInButton();
 		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("loginAndCreateAnAccountURL")));
+	}
+	
+	@Test(groups={"mainPageTests", "buy"})
+	public void moveOverElementShowsBuyingAndDetailsOptions() throws IOException, InterruptedException {
+		MainPage page = new MainPage(driver);
+		
+		page.mouseOverFirstItemToBuy();
+		
 	}
 	
 }

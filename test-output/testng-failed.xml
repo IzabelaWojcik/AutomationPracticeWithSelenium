@@ -1,43 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.automationpractice.listeners.TestListener"/>
-  </listeners>
-  <test thread-count="5" name="MainPageTests(failed)">
-    <parameter name="openedURL" value="http://automationpractice.com/index.php"/>
-    <groups>
-      <run>
-        <include name="mainPageTests"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.automationpractice.testcases.MainPageTest">
         <methods>
+          <include name="moveOverElementShowsBuyingAndDetailsOptions"/>
           <include name="setupBeforeMethod"/>
           <include name="tearDown"/>
           <include name="onPressLogInButtonMoveToLoginSiteTest"/>
         </methods>
       </class> <!-- com.automationpractice.testcases.MainPageTest -->
     </classes>
-  </test> <!-- MainPageTests(failed) -->
-  <test thread-count="5" name="LoginAndCreateAnAccountPageTests(failed)">
-    <parameter name="openedURL" value="http://automationpractice.com/index.php?controller=authentication&amp;back=my-account"/>
-    <groups>
-      <run>
-        <include name="logIn"/>
-        <exclude name="createAccount"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest">
-        <methods>
-          <include name="enterIncorrectLoginData"/>
-          <include name="setupBeforeMethod"/>
-          <include name="enterCorrectLoginAndPasswordTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.automationpractice.testcases.LoginAndCreateAnAccountPageTest -->
-    </classes>
-  </test> <!-- LoginAndCreateAnAccountPageTests(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

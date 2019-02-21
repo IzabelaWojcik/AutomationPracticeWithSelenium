@@ -13,7 +13,7 @@
 
 		<groups>
 			<run>
-				<include name="mainPageTests"></include>
+				<include name="buy"></include>
 			</run>
 		</groups>
 
@@ -30,7 +30,7 @@
 
 		<groups>
 			<run>
-				<include name="logIn"></include>
+				<exclude name="logIn"></exclude>
 				<exclude name="createAccount"></exclude>
 			</run>
 		</groups>

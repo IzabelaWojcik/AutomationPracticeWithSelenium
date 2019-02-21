@@ -20,7 +20,7 @@ import com.automationpractice.utility.Utility;
 public class LoginAndCreateAnAccountPageTest extends SetUps{
 	private int waitForSeconds = 3;
 	
-	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups= {"loginAndCreateAnAccountPageTests", "createAccount"})
+	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups={"loginAndCreateAnAccountPageTests", "createAccount"})
 	public void enterCorrectEmailTest(String email) throws IOException {
 		
 		driver.manage().timeouts().implicitlyWait(waitForSeconds, TimeUnit.SECONDS);
@@ -33,7 +33,7 @@ public class LoginAndCreateAnAccountPageTest extends SetUps{
 		assertTrue(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
 	}
 	
-	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups= {"loginAndCreateAnAccountPageTests", "createAccount"})
+	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups={"loginAndCreateAnAccountPageTests", "createAccount"})
 	public void enterIncorrectEmailTest(String email) throws IOException {
 		
 		driver.manage().timeouts().implicitlyWait(waitForSeconds, TimeUnit.SECONDS);
@@ -46,7 +46,7 @@ public class LoginAndCreateAnAccountPageTest extends SetUps{
 		assertFalse(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
 	}
 	
-	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups= {"loginAndCreateAnAccountPageTests", "createAccount"})
+	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups={"loginAndCreateAnAccountPageTests", "createAccount"})
 	public void enterExistingEmailTest(String email) throws IOException {
 		
 		driver.manage().timeouts().implicitlyWait(waitForSeconds, TimeUnit.SECONDS);
@@ -59,7 +59,7 @@ public class LoginAndCreateAnAccountPageTest extends SetUps{
 		assertFalse(Compare.validateElementIsDisplayed(driver, "id", "account-creation_form"));
 	}
 	
-	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups= {"loginAndCreateAnAccountPageTests", "logIn"})
+	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups={"loginAndCreateAnAccountPageTests", "logIn"})
 	public void enterIncorrectLoginData(String login, String password) throws IOException{
 		
 		driver.manage().timeouts().implicitlyWait(waitForSeconds, TimeUnit.SECONDS);
@@ -74,7 +74,7 @@ public class LoginAndCreateAnAccountPageTest extends SetUps{
 		
 	}
 	
-	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups= {"loginAndCreateAnAccountPageTests", "createAccount"})
+	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups={"loginAndCreateAnAccountPageTests", "createAccount"})
 	public void fillAllRegistrationFormWithCorrectData(String name, String lastname, String password, String company,
 			String address, String addressLine2, String city, String postCode, String additionalInformation,
 			String homeNumber, String mobileNumber, String addressAlias) throws IOException
@@ -122,7 +122,7 @@ public class LoginAndCreateAnAccountPageTest extends SetUps{
 		
 	}
 	
-	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups= {"loginAndCreateAnAccountPageTests", "logIn"})
+	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups={"loginAndCreateAnAccountPageTests", "logIn"})
 	public void enterCorrectLoginAndPasswordTest(String login, String password) throws IOException {
 		
 		driver.manage().timeouts().implicitlyWait(waitForSeconds, TimeUnit.SECONDS);

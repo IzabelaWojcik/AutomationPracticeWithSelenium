@@ -33,7 +33,7 @@ public class SetUps {
 				driver = new ChromeDriver();
 			}
 			
-			driver.manage().window().maximize();
+			//driver.manage().window().maximize();
 			driver.get(url);
 	}
 
