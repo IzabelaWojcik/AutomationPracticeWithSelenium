@@ -13,12 +13,21 @@ import com.automationpractice.utility.Utility;
 
 public class SetUps {
 	public static WebDriver driver;
+<<<<<<< HEAD
 	
 	@BeforeMethod(alwaysRun=true)
 	@Parameters("openedURL")
 	public void setupBeforeMethod(String url) throws IOException {
 		
 			System.out.println("url = " + url);
+=======
+	String openedURL = "";
+	
+	@BeforeMethod(alwaysRun=true)
+	//@Parameters("openedURL")
+	public void setupBeforeMethod() throws IOException {
+		//	this.openedURL = openedURL;
+>>>>>>> origin/master
 			
 			if(Utility.fetchPropertyValue("browserName").equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");

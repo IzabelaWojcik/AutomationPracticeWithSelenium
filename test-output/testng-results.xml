@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
   <reporter-output>
   </reporter-output>
@@ -32,6 +33,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+=======
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8888" started-at="2019-02-20T12:50:49Z" finished-at="2019-02-20T12:50:58Z">
+    <groups>
+      <group name="logIn">
+        <method signature="MainPageTest.onPressLogInButtonMoveToLoginSiteTest()[pri:0, instance:com.automationpractice.testcases.MainPageTest@27c20538]" name="onPressLogInButtonMoveToLoginSiteTest" class="com.automationpractice.testcases.MainPageTest"/>
+      </group> <!-- logIn -->
+      <group name="mainPageTests">
+        <method signature="MainPageTest.onPressLogInButtonMoveToLoginSiteTest()[pri:0, instance:com.automationpractice.testcases.MainPageTest@27c20538]" name="onPressLogInButtonMoveToLoginSiteTest" class="com.automationpractice.testcases.MainPageTest"/>
+      </group> <!-- mainPageTests -->
+    </groups>
+    <test name="Test" duration-ms="8888" started-at="2019-02-20T12:50:49Z" finished-at="2019-02-20T12:50:58Z">
+      <class name="com.automationpractice.testcases.MainPageTest">
+        <test-method status="PASS" signature="setupBeforeMethod()[pri:0, instance:com.automationpractice.testcases.MainPageTest@27c20538]" name="setupBeforeMethod" is-config="true" duration-ms="6996" started-at="2019-02-20T12:50:49Z" finished-at="2019-02-20T12:50:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="onPressLogInButtonMoveToLoginSiteTest()[pri:0, instance:com.automationpractice.testcases.MainPageTest@27c20538]" name="onPressLogInButtonMoveToLoginSiteTest" duration-ms="1718" started-at="2019-02-20T12:50:56Z" finished-at="2019-02-20T12:50:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onPressLogInButtonMoveToLoginSiteTest -->
+>>>>>>> origin/master
       </class> <!-- com.automationpractice.testcases.MainPageTest -->
     </test> <!-- MainPageTests -->
     <test name="LoginAndCreateAnAccountPageTests" duration-ms="0" started-at="2019-02-21T13:04:25Z" finished-at="2019-02-21T13:04:25Z">

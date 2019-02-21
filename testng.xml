@@ -18,12 +18,26 @@
 		</groups>
 
 		<classes>
+=======
+	<test name="Test">
+
+	    <groups>
+            <run>
+                <include name="mainPageTests"></include>
+                <exclude name="loginAndCreateAnAccountPageTests"></exclude>
+            </run>
+        </groups>
+
+		<classes>
+			<class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest"/>
+>>>>>>> origin/master
 			<class name="com.automationpractice.testcases.MainPageTest" />
 			<class name="com.automationpractice.datagenerators.DataGenerator" />
 		</classes>
 
 	</test>
 
+<<<<<<< HEAD
 	<test name="LoginAndCreateAnAccountPageTests">
 
 		<parameter name="openedURL" value="http://automationpractice.com/index.php?controller=authentication&amp;back=my-account"></parameter>
@@ -42,4 +56,6 @@
 
 	</test>
 
+=======
+>>>>>>> origin/master
 </suite> 
