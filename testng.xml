@@ -6,18 +6,37 @@
 		<listener class-name="com.automationpractice.listeners.TestListener"></listener>
 	</listeners>
 
-	<test name="Test">
 
-	    <groups>
-            <run>
-                <include name="mainPageTests"></include>
-                <exclude name="loginAndCreateAnAccountPageTests"></exclude>
-            </run>
-        </groups>
+	<test name="MainPageTests">
+
+		<parameter name="openedURL" value="http://automationpractice.com/index.php"></parameter>
+
+		<groups>
+			<run>
+				<include name="mainPageTests"></include>
+			</run>
+		</groups>
 
 		<classes>
-			<class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest"/>
 			<class name="com.automationpractice.testcases.MainPageTest" />
+			<class name="com.automationpractice.datagenerators.DataGenerator" />
+		</classes>
+
+	</test>
+
+	<test name="LoginAndCreateAnAccountPageTests">
+
+		<parameter name="openedURL" value="http://automationpractice.com/index.php?controller=authentication&amp;back=my-account"></parameter>
+
+		<groups>
+			<run>
+				<include name="logIn"></include>
+				<exclude name="createAccount"></exclude>
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.automationpractice.testcases.LoginAndCreateAnAccountPageTest" />
 			<class name="com.automationpractice.datagenerators.DataGenerator" />
 		</classes>
 
