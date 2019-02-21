@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="9725" started-at="2019-02-21T13:18:40Z" finished-at="2019-02-21T13:18:50Z">
+  <suite name="Suite" duration-ms="9646" started-at="2019-02-21T13:34:25Z" finished-at="2019-02-21T13:34:35Z">
     <groups>
       <group name="buy">
         <method signature="MainPageTest.moveOverElementShowsBuyingAndDetailsOptions()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="moveOverElementShowsBuyingAndDetailsOptions" class="com.automationpractice.testcases.MainPageTest"/>
@@ -11,9 +11,9 @@
         <method signature="MainPageTest.moveOverElementShowsBuyingAndDetailsOptions()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="moveOverElementShowsBuyingAndDetailsOptions" class="com.automationpractice.testcases.MainPageTest"/>
       </group> <!-- mainPageTests -->
     </groups>
-    <test name="MainPageTests" duration-ms="9482" started-at="2019-02-21T13:18:40Z" finished-at="2019-02-21T13:18:50Z">
+    <test name="MainPageTests" duration-ms="9398" started-at="2019-02-21T13:34:25Z" finished-at="2019-02-21T13:34:34Z">
       <class name="com.automationpractice.testcases.MainPageTest">
-        <test-method status="PASS" signature="setupBeforeMethod(java.lang.String)[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="setupBeforeMethod" is-config="true" duration-ms="8053" started-at="2019-02-21T13:18:40Z" finished-at="2019-02-21T13:18:48Z">
+        <test-method status="PASS" signature="setupBeforeMethod(java.lang.String)[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="setupBeforeMethod" is-config="true" duration-ms="7987" started-at="2019-02-21T13:34:25Z" finished-at="2019-02-21T13:34:33Z">
           <params>
             <param index="0">
               <value>
@@ -24,17 +24,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBeforeMethod -->
-        <test-method status="PASS" signature="moveOverElementShowsBuyingAndDetailsOptions()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="moveOverElementShowsBuyingAndDetailsOptions" duration-ms="612" started-at="2019-02-21T13:18:48Z" finished-at="2019-02-21T13:18:49Z">
+        <test-method status="PASS" signature="moveOverElementShowsBuyingAndDetailsOptions()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="moveOverElementShowsBuyingAndDetailsOptions" duration-ms="598" started-at="2019-02-21T13:34:33Z" finished-at="2019-02-21T13:34:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- moveOverElementShowsBuyingAndDetailsOptions -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="tearDown" is-config="true" duration-ms="656" started-at="2019-02-21T13:18:49Z" finished-at="2019-02-21T13:18:50Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="tearDown" is-config="true" duration-ms="651" started-at="2019-02-21T13:34:34Z" finished-at="2019-02-21T13:34:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationpractice.testcases.MainPageTest -->
     </test> <!-- MainPageTests -->
-    <test name="LoginAndCreateAnAccountPageTests" duration-ms="0" started-at="2019-02-21T13:18:50Z" finished-at="2019-02-21T13:18:50Z">
+    <test name="LoginAndCreateAnAccountPageTests" duration-ms="2" started-at="2019-02-21T13:34:35Z" finished-at="2019-02-21T13:34:35Z">
     </test> <!-- LoginAndCreateAnAccountPageTests -->
   </suite> <!-- Suite -->
 </testng-results>
