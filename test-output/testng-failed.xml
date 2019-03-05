@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
-    <classes>
-      <class name="com.automationpractice.testcases.MainPageTest">
-        <methods>
-          <include name="moveOverElementShowsBuyingAndDetailsOptions"/>
-          <include name="setupBeforeMethod"/>
-          <include name="tearDown"/>
-=======
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="com.automationpractice.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="MainPageTests(failed)">
+    <parameter name="openedURL" value="http://automationpractice.com/index.php"/>
     <groups>
       <run>
-        <include name="mainPageTests"/>
+        <include name="buy"/>
       </run>
     </groups>
     <classes>
       <class name="com.automationpractice.testcases.MainPageTest">
         <methods>
->>>>>>> origin/master
-          <include name="onPressLogInButtonMoveToLoginSiteTest"/>
+          <include name="addToCard"/>
+          <include name="setupBeforeMethod"/>
+          <include name="moveOverElementShowsBuyingAndDetailsOptionsTest"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.automationpractice.testcases.MainPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- MainPageTests(failed) -->
+</suite> <!-- Failed suite [Suite] -->

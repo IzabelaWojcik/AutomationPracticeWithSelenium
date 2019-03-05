@@ -19,12 +19,32 @@ public class MainPage {
 		driver.findElement(By.className(Utility.fetchLocatorValue("login_button_className"))).click();
 	}
 	
-	public WebElement getFirstItemToBuy() throws IOException, InterruptedException {
-		return driver.findElement(By.xpath(Utility.fetchLocatorValue("firstItemToBuy_li_xpath")));
+	public void clickOnAddToCardButton() throws IOException {
+		driver.findElement(By.xpath(Utility.fetchLocatorValue("firstItemToBuyAddToCard_span_xpath"))).click();
 	}
 	
-	public void clickedOnQuickViewElement() throws IOException {
-		driver.findElement(By.xpath(Utility.fetchLocatorValue("firstItemToBuyQuickView_a_xpath")));
+	public void clickOnCheckoutButtonInOrderWindow() throws IOException {
+		driver.findElement(By.xpath(Utility.fetchLocatorValue("windowAfterClickingAddToCard_checkoutButton_xpath"))).click();
 	}
+	
+	public void clickOnCheckoutButtonOnOrderPage() throws IOException {
+		driver.findElement(By.xpath(Utility.fetchLocatorValue("buttonOnPageAfertClickingCheckoutButton_checkoutButton_xpath"))).click();
+	}
+	
+	public WebElement moveMouseOnFirstItemToBuy() throws IOException, InterruptedException {
+		return driver.findElement(By.xpath(Utility.fetchLocatorValue("firstItemToBuy_li_xpath")));
+	}
+	public WebElement getWindowAfterClickingAddToCardButton() throws IOException {
+		return driver.findElement(By.className(Utility.fetchLocatorValue("windowAfterClickingAddToCard_div_class")));
+	}
+	
+	public WebElement getCheckoutButtonOnOrderPage() throws IOException {
+		return driver.findElement(By.xpath(Utility.fetchLocatorValue("buttonOnPageAfertClickingCheckoutButton_checkoutButton_xpath")));
+	}
+	
+	//quick view
+//	public WebElement getFirstItemDeatilsWindow() throws IOException {
+//		return driver.findElement(By.xpath(Utility.fetchLocatorValue("firstItemDetailsWindow_div_xpath")));
+//	}
 	
 }

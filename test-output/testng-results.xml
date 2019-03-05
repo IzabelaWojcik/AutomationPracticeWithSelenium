@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
+<testng-results skipped="0" failed="0" ignored="7" total="9" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="9646" started-at="2019-02-21T13:34:25Z" finished-at="2019-02-21T13:34:35Z">
+  <suite name="Suite" duration-ms="27173" started-at="2019-03-05T20:55:15Z" finished-at="2019-03-05T20:55:42Z">
     <groups>
       <group name="buy">
-        <method signature="MainPageTest.moveOverElementShowsBuyingAndDetailsOptions()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="moveOverElementShowsBuyingAndDetailsOptions" class="com.automationpractice.testcases.MainPageTest"/>
+        <method signature="MainPageTest.moveOverElementShowsBuyingAndDetailsOptionsTest()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="moveOverElementShowsBuyingAndDetailsOptionsTest" class="com.automationpractice.testcases.MainPageTest"/>
+        <method signature="MainPageTest.addToCard()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="addToCard" class="com.automationpractice.testcases.MainPageTest"/>
       </group> <!-- buy -->
       <group name="mainPageTests">
-        <method signature="MainPageTest.moveOverElementShowsBuyingAndDetailsOptions()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="moveOverElementShowsBuyingAndDetailsOptions" class="com.automationpractice.testcases.MainPageTest"/>
+        <method signature="MainPageTest.moveOverElementShowsBuyingAndDetailsOptionsTest()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="moveOverElementShowsBuyingAndDetailsOptionsTest" class="com.automationpractice.testcases.MainPageTest"/>
+        <method signature="MainPageTest.addToCard()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="addToCard" class="com.automationpractice.testcases.MainPageTest"/>
       </group> <!-- mainPageTests -->
     </groups>
-    <test name="MainPageTests" duration-ms="9398" started-at="2019-02-21T13:34:25Z" finished-at="2019-02-21T13:34:34Z">
+    <test name="MainPageTests" duration-ms="26913" started-at="2019-03-05T20:55:15Z" finished-at="2019-03-05T20:55:42Z">
       <class name="com.automationpractice.testcases.MainPageTest">
-        <test-method status="PASS" signature="setupBeforeMethod(java.lang.String)[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="setupBeforeMethod" is-config="true" duration-ms="7987" started-at="2019-02-21T13:34:25Z" finished-at="2019-02-21T13:34:33Z">
+        <test-method status="PASS" signature="setupBeforeMethod(java.lang.String)[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="setupBeforeMethod" is-config="true" duration-ms="8023" started-at="2019-03-05T20:55:15Z" finished-at="2019-03-05T20:55:23Z">
           <params>
             <param index="0">
               <value>
@@ -24,17 +26,36 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBeforeMethod -->
-        <test-method status="PASS" signature="moveOverElementShowsBuyingAndDetailsOptions()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="moveOverElementShowsBuyingAndDetailsOptions" duration-ms="598" started-at="2019-02-21T13:34:33Z" finished-at="2019-02-21T13:34:34Z">
+        <test-method status="PASS" signature="moveOverElementShowsBuyingAndDetailsOptionsTest()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="moveOverElementShowsBuyingAndDetailsOptionsTest" duration-ms="615" started-at="2019-03-05T20:55:23Z" finished-at="2019-03-05T20:55:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- moveOverElementShowsBuyingAndDetailsOptions -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="tearDown" is-config="true" duration-ms="651" started-at="2019-02-21T13:34:34Z" finished-at="2019-02-21T13:34:34Z">
+        </test-method> <!-- moveOverElementShowsBuyingAndDetailsOptionsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="tearDown" is-config="true" duration-ms="655" started-at="2019-03-05T20:55:24Z" finished-at="2019-03-05T20:55:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setupBeforeMethod(java.lang.String)[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="setupBeforeMethod" is-config="true" duration-ms="7974" started-at="2019-03-05T20:55:24Z" finished-at="2019-03-05T20:55:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://automationpractice.com/index.php]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeMethod -->
+        <test-method status="PASS" signature="addToCard()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="addToCard" duration-ms="8813" started-at="2019-03-05T20:55:32Z" depends-on-methods="com.automationpractice.testcases.MainPageTest.moveOverElementShowsBuyingAndDetailsOptionsTest" finished-at="2019-03-05T20:55:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automationpractice.testcases.MainPageTest@5cb9f472]" name="tearDown" is-config="true" duration-ms="669" started-at="2019-03-05T20:55:41Z" finished-at="2019-03-05T20:55:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationpractice.testcases.MainPageTest -->
     </test> <!-- MainPageTests -->
-    <test name="LoginAndCreateAnAccountPageTests" duration-ms="2" started-at="2019-02-21T13:34:35Z" finished-at="2019-02-21T13:34:35Z">
+    <test name="LoginAndCreateAnAccountPageTests" duration-ms="0" started-at="2019-03-05T20:55:42Z" finished-at="2019-03-05T20:55:42Z">
     </test> <!-- LoginAndCreateAnAccountPageTests -->
   </suite> <!-- Suite -->
 </testng-results>

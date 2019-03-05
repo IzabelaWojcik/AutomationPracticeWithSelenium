@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.automationpractice.testcases.MainPageTest" hash-for-method="moveOverElementShowsBuyingAndDetailsOptions">moveOverElementShowsBuyingAndDetailsOptions</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.automationpractice.testcases.MainPageTest" hash-for-method="addToCard">addToCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.automationpractice.testcases.MainPageTest" hash-for-method="moveOverElementShowsBuyingAndDetailsOptionsTest">moveOverElementShowsBuyingAndDetailsOptionsTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +130,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="moveOverElementShowsBuyingAndDetailsOptions">
-                  </a> <!-- moveOverElementShowsBuyingAndDetailsOptions -->
-                  <span class="method-name">moveOverElementShowsBuyingAndDetailsOptions</span>
+                  <a name="addToCard">
+                  </a> <!-- addToCard -->
+                  <span class="method-name">addToCard</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="moveOverElementShowsBuyingAndDetailsOptionsTest">
+                  </a> <!-- moveOverElementShowsBuyingAndDetailsOptionsTest -->
+                  <span class="method-name">moveOverElementShowsBuyingAndDetailsOptionsTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,7 +210,11 @@
               <span class="test-group-name">buy</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">moveOverElementShowsBuyingAndDetailsOptions</span>
+                <span class="method-in-group-name">addToCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">moveOverElementShowsBuyingAndDetailsOptionsTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -206,7 +222,11 @@
               <span class="test-group-name">mainPageTests</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">moveOverElementShowsBuyingAndDetailsOptions</span>
+                <span class="method-in-group-name">addToCard</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">moveOverElementShowsBuyingAndDetailsOptionsTest</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -226,16 +246,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'moveOverElementShowsBuyingAndDetailsOptions')
+data.setCell(0, 1, 'addToCard')
 data.setCell(0, 2, 'com.automationpractice.testcases.MainPageTest')
-data.setCell(0, 3, 598);
+data.setCell(0, 3, 8813);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'moveOverElementShowsBuyingAndDetailsOptionsTest')
+data.setCell(1, 2, 'com.automationpractice.testcases.MainPageTest')
+data.setCell(1, 3, 615);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 598 ms</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -254,6 +278,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">com.automationpractice.testcases.MainPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">onPressLogInButtonMoveToLoginSiteTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">com.automationpractice.testcases.LoginAndCreateAnAccountPageTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">enterIncorrectEmailTest</span>
@@ -267,13 +298,6 @@ return data;
                 <span class="ignored-method-name">enterCorrectEmailTest</span>
                 <br/>
                 <span class="ignored-method-name">fillAllRegistrationFormWithCorrectData</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.automationpractice.testcases.MainPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">onPressLogInButtonMoveToLoginSiteTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -291,12 +315,24 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">moveOverElementShowsBuyingAndDetailsOptions</span>
-                <span class="method-start">7987 ms</span>
+                <span class="method-name">moveOverElementShowsBuyingAndDetailsOptionsTest</span>
+                <span class="method-start">8023 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8587 ms</span>
+                <span class="method-start">8640 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupBeforeMethod(http://automationpractice.com/index.php)</span>
+                <span class="method-start">9295 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addToCard</span>
+                <span class="method-start">17269 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26084 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
