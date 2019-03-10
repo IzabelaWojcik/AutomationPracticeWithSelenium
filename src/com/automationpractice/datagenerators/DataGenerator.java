@@ -38,7 +38,7 @@ public class DataGenerator {
 		else if(met.getName().endsWith("fillAllRegistrationFormWithCorrectData")) {
 			sheetName = "createAccountFormAllDataRequired";
 		}
-		else if(met.getName().equalsIgnoreCase("orderSuccesfully")) {
+		else if(met.getName().equalsIgnoreCase("orderedSuccesfullyPayByBankWire")) {
 			sheetName = "existingAccount";
 		}
 		

@@ -17,7 +17,7 @@
           <include name="setupBeforeMethod"/>
           <include name="moveOverElementShowsBuyingAndDetailsOptionsTest"/>
           <include name="tearDown"/>
-          <include name="orderSuccesfully" invocation-numbers="0"/>
+          <include name="orderedSuccesfullyPayByBankWire" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.automationpractice.testcases.MainPageTest -->
     </classes>
