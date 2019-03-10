@@ -38,6 +38,9 @@ public class DataGenerator {
 		else if(met.getName().endsWith("fillAllRegistrationFormWithCorrectData")) {
 			sheetName = "createAccountFormAllDataRequired";
 		}
+		else if(met.getName().equalsIgnoreCase("orderSuccesfully")) {
+			sheetName = "existingAccount";
+		}
 		
 		XSSFSheet sheet = createSheet(sheetName);
 		int numberOfRows = getRowsCount(sheet);

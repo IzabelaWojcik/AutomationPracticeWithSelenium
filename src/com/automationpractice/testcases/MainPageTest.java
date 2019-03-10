@@ -11,7 +11,14 @@ import org.testng.annotations.Test;
 
 import com.automationpractice.assertions.Compare;
 import com.automationpractice.base.SetUps;
+import com.automationpractice.datagenerators.DataGenerator;
 import com.automationpractice.pages.MainPage;
+import com.automationpractice.pages.OrderChooseAddressPage;
+import com.automationpractice.pages.OrderLogInPage;
+import com.automationpractice.pages.OrderPage;
+import com.automationpractice.pages.OrderPaymentBankWirePage;
+import com.automationpractice.pages.OrderPaymentPage;
+import com.automationpractice.pages.OrderShippingPage;
 import com.automationpractice.utility.Utility;
 
 public class MainPageTest extends SetUps{
@@ -31,26 +38,44 @@ public class MainPageTest extends SetUps{
 		moveMouseOverFirstElementToBuy(page);
 	}
 	
-	@Test(groups={"mainPageTests", "buy"}, dependsOnMethods="moveOverElementShowsBuyingAndDetailsOptionsTest")
-	public void addToCard() throws IOException, InterruptedException {
-		MainPage page = new MainPage(driver);
+	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups={"mainPageTests", "buy"}, dependsOnMethods="moveOverElementShowsBuyingAndDetailsOptionsTest")
+	public void orderedSuccesfullyPayByBankWire(String login, String password) throws IOException, InterruptedException {
+		MainPage mainPage = new MainPage(driver);
 		
-		moveMouseOverFirstElementToBuy(page);
+		moveMouseOverFirstElementToBuy(mainPage);
 		
-		page.clickOnAddToCardButton();
-
-		page.getWindowAfterClickingAddToCardButton();
-		
-		page.clickOnCheckoutButtonInOrderWindow();
-
+		mainPage.clickOnAddToCardButton();
+		mainPage.getWindowAfterClickingAddToCardButton();
+		mainPage.clickOnCheckoutButtonInOrderWindow();
 		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("orderUrL")));
 		
-		Utility.scroolIntoView(driver, page.getCheckoutButtonOnOrderPage());
-		
-		page.clickOnCheckoutButtonOnOrderPage();
-		
+		OrderPage orderPage = new OrderPage(driver);
+		Utility.scroolIntoView(driver, orderPage.getCheckoutButtonOnOrderPage());
+		orderPage.clickOnCheckoutButtonOnOrderPage();
 		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("orderLogInURL")));
 		
+		OrderLogInPage orderLogInPage = new OrderLogInPage(driver);
+		orderLogInPage.enterEmailToLogIn(login);
+		orderLogInPage.enterPasswordToLogIn(password);
+		orderLogInPage.clickLogInButton();
+		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("orderChooseAdderssURL")));
+		
+		OrderChooseAddressPage orderChooseAddressPage = new OrderChooseAddressPage(driver);
+		orderChooseAddressPage.clickProceedToCheckOutButton();
+		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("orderShippingURL")));
+		
+		OrderShippingPage orderShippingPage = new OrderShippingPage(driver);
+		orderShippingPage.checkAgreeToTermsCheckbox();
+		orderShippingPage.clickProceedToCheckOutButton();
+		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("orderPaymentURL")));
+		
+		OrderPaymentPage orderPaymentPage = new OrderPaymentPage(driver);
+		orderPaymentPage.clickBankWirePayment();
+		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("orderPaymentBankWire")));
+		
+		OrderPaymentBankWirePage orderPaymentBankWirePage = new OrderPaymentBankWirePage(driver);
+		orderPaymentBankWirePage.clickConfirmOrder();
+		assertTrue(Compare.validatePartialURL(driver, Utility.fetchPropertyValue("orderConfirmationPagePartialURL")));
 	}
 	
 	

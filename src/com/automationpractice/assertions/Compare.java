@@ -14,6 +14,19 @@ public class Compare {
 
 		return flag;
 	}
+	
+	public static boolean validatePartialURL(WebDriver driver, String expPartialUrl) {
+		boolean flag = false;
+		String pageUrl = driver.getCurrentUrl();
+		
+        String partOfPageUrl = pageUrl.substring(0, pageUrl.indexOf("=", pageUrl.indexOf("=") + 1));
+        
+		if(partOfPageUrl.equalsIgnoreCase(expPartialUrl)) {
+			flag = true;
+		}
+		
+		return flag;
+	}
 
 	public static boolean validateElementIsDisplayed(WebDriver driver, String locType, String locValue){
 		boolean result = false;
