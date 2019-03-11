@@ -18,7 +18,8 @@ import com.aventstack.extentreports.Status;
 
 public class TestListener extends SetUps implements ITestListener{
 	String screenShotsFilename = "./Screenshots/";
-
+	ExtentTest extentTest;
+	
 	@Override
 	public void onStart(ITestContext context) {
 
@@ -28,9 +29,10 @@ public class TestListener extends SetUps implements ITestListener{
 			ExtentReportManager.getReporter();
 
 			System.out.println("Test started ob browser: " + Utility.fetchPropertyValue("browserName"));
-			ExtentReportManager.createExtentTest(context.getName()).info("Test started ob browser: " + Utility.fetchPropertyValue("browserName"));
+			extentTest = ExtentReportManager.createExtentTest(context.getName()).info("Test started ob browser: " + Utility.fetchPropertyValue("browserName"));
 
 			FileUtils.cleanDirectory(new File(screenShotsFilename)); 
+			
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
@@ -54,7 +56,7 @@ public class TestListener extends SetUps implements ITestListener{
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("TEST PASSED  " + result.getName());
 
-		ExtentReportManager.createExtentTest(result.getName()).log(Status.PASS, "Test:   " + result.getName() + "   PASSED");
+		extentTest.log(Status.PASS, "Test:   " + result.getName() + "   PASSED");
 	}
 
 	@Override
@@ -62,16 +64,16 @@ public class TestListener extends SetUps implements ITestListener{
 		try {
 			String screenshotPath = captureScreen(result);
 			
-			ExtentTest test = ExtentReportManager.createExtentTest(result.getName());
-			ExtentTest screenShot = test.addScreenCaptureFromPath(screenshotPath);
+			//ExtentTest test = ExtentReportManager.createExtentTest(result.getName());
+			ExtentTest screenShot = extentTest.addScreenCaptureFromPath(screenshotPath);
 			
 			System.out.println("\n" + "TEST FAILED: " + result.getName() + "   from class: " + result.getInstanceName()
 			+ "\n " + result.getThrowable() + "\n");
 			
-			test.log(Status.FAIL, "Failed test:    " + result.getName() + "    from class:    " + result.getInstanceName()
+			extentTest.log(Status.FAIL, "Failed test:    " + result.getName() + "    from class:    " + result.getInstanceName()
 			 + "\n" + result.getThrowable());
 			
-			test.info("ScreenShot available here: " + screenShot);
+			extentTest.info("ScreenShot available here: " + screenShot);
 		
 		} catch (IOException e) {
 			System.out.println("Unalble to take a screenShot");
@@ -83,7 +85,7 @@ public class TestListener extends SetUps implements ITestListener{
 	public void onTestSkipped(ITestResult result) {
 		System.out.println("TEST SKIPPED: " + result.getName() + " from class: " + result.getInstanceName() + "\n" + result.getThrowable());
 
-		ExtentReportManager.createExtentTest(result.getName()).log(Status.SKIP, "Skipped test:    " + result.getName() + 
+		extentTest.log(Status.SKIP, "Skipped test:    " + result.getName() + 
 				"    from class:   " + result.getInstanceName() + "\n" + result.getThrowable());
 	}
 
