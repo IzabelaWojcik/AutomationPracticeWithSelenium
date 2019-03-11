@@ -14,10 +14,10 @@
     <classes>
       <class name="com.automationpractice.testcases.MainPageTest">
         <methods>
+          <include name="orderedSuccesfullyPaidByBankWire" invocation-numbers="0"/>
           <include name="setupBeforeMethod"/>
           <include name="moveOverElementShowsBuyingAndDetailsOptionsTest"/>
           <include name="tearDown"/>
-          <include name="orderedSuccesfullyPayByBankWire" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.automationpractice.testcases.MainPageTest -->
     </classes>

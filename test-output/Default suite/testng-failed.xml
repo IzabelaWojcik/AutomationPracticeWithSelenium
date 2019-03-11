@@ -5,11 +5,11 @@
     <classes>
       <class name="com.automationpractice.testcases.MainPageTest">
         <methods>
+          <include name="orderedSuccesfullyPaidByBankWire"/>
           <include name="setupBeforeMethod"/>
           <include name="moveOverElementShowsBuyingAndDetailsOptionsTest"/>
           <include name="tearDown"/>
           <include name="onPressLogInButtonMoveToLoginSiteTest"/>
-          <include name="orderSuccesfully"/>
         </methods>
       </class> <!-- com.automationpractice.testcases.MainPageTest -->
     </classes>

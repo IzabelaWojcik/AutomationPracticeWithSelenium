@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.automationpractice.assertions.Compare;
@@ -39,14 +41,17 @@ public class MainPageTest extends SetUps{
 	}
 	
 	@Test(dataProvider="Excel-DataProvider", dataProviderClass=DataGenerator.class, groups={"mainPageTests", "buy"}, dependsOnMethods="moveOverElementShowsBuyingAndDetailsOptionsTest")
-	public void orderedSuccesfullyPayByBankWire(String login, String password) throws IOException, InterruptedException {
+	public void orderedSuccesfullyPaidByBankWire(String login, String password) throws IOException, InterruptedException {
 		MainPage mainPage = new MainPage(driver);
 		
 		moveMouseOverFirstElementToBuy(mainPage);
 		
 		mainPage.clickOnAddToCardButton();
 		mainPage.getWindowAfterClickingAddToCardButton();
-		mainPage.clickOnCheckoutButtonInOrderWindow();
+		
+		WebElement element = mainPage.getCheckoutButtonInOrderWindow();
+		Utility.scroolIntoView(driver, element);
+		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(element)).click();
 		assertTrue(Compare.validatePageURL(driver, Utility.fetchPropertyValue("orderUrL")));
 		
 		OrderPage orderPage = new OrderPage(driver);
