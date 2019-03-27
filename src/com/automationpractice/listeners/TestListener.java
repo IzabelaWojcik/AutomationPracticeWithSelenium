@@ -2,7 +2,6 @@ package com.automationpractice.listeners;
 
 import java.io.File;
 import java.io.IOException;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -17,7 +16,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class TestListener extends SetUps implements ITestListener{
-	String screenShotsFilename = "./Screenshots/";
+	String screenShotsFoldername = SetUps.SCREENSHOTS_FOLDERNAME;
 	ExtentTest extentTest;
 	
 	@Override
@@ -30,8 +29,6 @@ public class TestListener extends SetUps implements ITestListener{
 
 			System.out.println("Test started ob browser: " + Utility.fetchPropertyValue("browserName"));
 			extentTest = ExtentReportManager.createExtentTest(context.getName()).info("Test started ob browser: " + Utility.fetchPropertyValue("browserName"));
-
-			FileUtils.cleanDirectory(new File(screenShotsFilename)); 
 			
 		} catch (IOException e1) {
 			e1.printStackTrace();
@@ -64,7 +61,6 @@ public class TestListener extends SetUps implements ITestListener{
 		try {
 			String screenshotPath = captureScreen(result);
 			
-			//ExtentTest test = ExtentReportManager.createExtentTest(result.getName());
 			ExtentTest screenShot = extentTest.addScreenCaptureFromPath(screenshotPath);
 			
 			System.out.println("\n" + "TEST FAILED: " + result.getName() + "   from class: " + result.getInstanceName()
@@ -97,13 +93,13 @@ public class TestListener extends SetUps implements ITestListener{
 	public String captureScreen(ITestResult result) throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String screenShotName = result.getName() + result.getStartMillis() + ".png";
-		String path = screenShotsFilename + screenShotName;
+		String path = screenShotsFoldername + "/" + screenShotName;
 		File target = new File(path);
 
 		FileUtils.copyFile(scrFile,target);
 		
 		return path;
 	}
-
+	
 }
 

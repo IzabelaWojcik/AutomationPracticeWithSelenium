@@ -14,7 +14,7 @@
     <classes>
       <class name="com.automationpractice.testcases.MainPageTest">
         <methods>
-          <include name="orderedSuccesfullyPaidByBankWire" invocation-numbers="0"/>
+          <include name="orderedSuccesfullyPaidByBankWire"/>
           <include name="setupBeforeMethod"/>
           <include name="moveOverElementShowsBuyingAndDetailsOptionsTest"/>
           <include name="tearDown"/>
